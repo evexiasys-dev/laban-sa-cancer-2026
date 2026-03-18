@@ -47,12 +47,17 @@ a{text-decoration:none;}
 .nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:18px 0;transition:background .35s,box-shadow .35s,padding .35s;}
 .nav.scrolled{background:rgba(255,255,255,.97);box-shadow:0 1px 0 var(--border),0 4px 16px rgba(0,0,0,.07);padding:10px 0;backdrop-filter:blur(12px);}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;}
-.nav-brand{display:flex;align-items:center;gap:10px;transition:opacity .2s;}
+.nav-brand{display:flex;align-items:center;gap:10px;transition:opacity .4s ease,transform .4s ease;}
 .nav-brand:hover{opacity:.85;}
+.nav-brand.brand-hidden{opacity:0;pointer-events:none;transform:translateY(-4px);}
 .nav-logo{height:38px;width:auto;flex-shrink:0;transition:height .35s;}
 .nav.scrolled .nav-logo{height:33px;}
 .nav-name{font-size:16px;font-weight:700;color:#fff;white-space:nowrap;transition:color .35s;}
 .nav.scrolled .nav-name{color:var(--td);}
+.nav-name-mobile{display:none;font-size:14px;font-weight:700;color:#fff;white-space:nowrap;transition:color .35s;line-height:1.2;}
+.nav-name-mobile .nav-name-sub{font-size:11px;font-weight:600;opacity:.7;display:block;letter-spacing:.5px;}
+.nav.scrolled .nav-name-mobile{color:var(--td);}
+.nav.scrolled .nav-name-mobile .nav-name-sub{opacity:.55;}
 .nav-right{display:flex;align-items:center;gap:8px;flex-shrink:0;}
 .nav-link{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;color:rgba(255,255,255,.9);padding:8px 14px;border-radius:8px;transition:color .2s,background .2s;}
 .nav-link:hover{background:rgba(255,255,255,.12);}
@@ -89,8 +94,8 @@ a{text-decoration:none;}
 .hero-grid{display:grid;grid-template-columns:1fr 380px;gap:56px;align-items:center;}
 /* LEFT */
 .hero-left{}
-.hero-logo{margin-bottom:28px;animation:fadeUp .8s ease both;}
-.hero-logo img{height:110px;width:auto;}
+.hero-logo{margin-bottom:32px;animation:fadeUp .8s ease both;}
+.hero-logo img{height:150px;width:auto;}
 .hero-sup{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:18px;animation:fadeUp .8s ease .1s both;}
 .hero-dot{width:6px;height:6px;border-radius:50%;background:var(--evx-g);flex-shrink:0;}
 .hero-title{font-size:clamp(42px,7vw,80px);font-weight:800;line-height:1.05;letter-spacing:-2px;margin-bottom:20px;animation:fadeUp .8s ease .2s both;}
@@ -256,6 +261,7 @@ footer a:hover{color:#fff;}
   .wrap{padding:0 20px;}
   /* nav */
   .nav-name{display:none;}
+  .nav-name-mobile{display:none;}
   /* hero */
   .hero{padding-top:86px;padding-bottom:64px;}
   .hero-grid{grid-template-columns:1fr;gap:40px;}
@@ -306,10 +312,12 @@ footer a:hover{color:#fff;}
   /* nav */
   .nav-cta{font-size:13px;padding:8px 14px;}
   .nav-link{display:none;}
+  .nav-name{display:none;}
+  .nav-name-mobile{display:block;}
   /* hero */
   .hero{padding-top:80px;padding-bottom:56px;}
   .hero-grid{grid-template-columns:1fr;gap:32px;}
-  .hero-logo img{height:72px;}
+  .hero-logo img{height:100px;}
   .hero-title{font-size:clamp(34px,12vw,52px);letter-spacing:-1px;}
   .hero-sub{font-size:14px;}
   .hero-btns{flex-direction:column;}
@@ -351,6 +359,7 @@ footer a:hover{color:#fff;}
     <a href="#" class="nav-brand">
       <img src="assets/images/favicon.png" alt="Evexia" class="nav-logo">
       <span class="nav-name">Evexia Wellness Center</span>
+      <span class="nav-name-mobile">March at EWC<span class="nav-name-sub">Evexia Wellness Center</span></span>
     </a>
     <div class="nav-right">
       <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="nav-link">
@@ -434,20 +443,20 @@ footer a:hover{color:#fff;}
     <div class="sched-grid rv">
       <div class="sched-cell">
         <span class="spill sp-t">Doors Open</span>
-        <div class="sched-time">9<sup>AM</sup></div>
+        <div class="sched-time">9<sup> AM</sup></div>
         <div class="sched-lbl">Call Time</div>
         <div class="sched-desc">Arrive early. Seats are first-come, first-served for the lecture.</div>
       </div>
       <div class="sched-cell">
         <span class="spill sp-r">Free Lecture</span>
-        <div class="sched-time">10<sup>AM</sup></div>
+        <div class="sched-time">10<sup> AM</sup></div>
         <div class="sched-lbl">Health Awareness Lecture</div>
         <div class="sched-desc">FREE. No payment. No registration. Open to absolutely everyone.</div>
         <div class="sched-hl"><i class="fas fa-star" style="margin-right:5px;"></i>Attend &amp; get EARLY PASS for Ultrasound!</div>
       </div>
       <div class="sched-cell">
         <span class="spill sp-y">Ultrasound Promo</span>
-        <div class="sched-time">1<sup>PM</sup></div>
+        <div class="sched-time">1<sup> PM</sup></div>
         <div class="sched-lbl">Ultrasound Procedures</div>
         <div class="sched-desc">20% Off promo rates. Lecture attendees are first in line. Walk-ins welcome after.</div>
       </div>
@@ -749,13 +758,46 @@ footer a:hover{color:#fff;}
 </footer>
 
 <script>
-  // Navbar
+  // ── Navbar scrolled state ───────────────────────────────
   const nav = document.getElementById('nav');
   const tick = () => nav.classList.toggle('scrolled', window.scrollY > 50);
   window.addEventListener('scroll', tick, {passive:true});
   tick();
 
-  // Scroll reveal
+  // ── Mobile: hide nav brand while hero logo is in view ───
+  const navBrand   = nav.querySelector('.nav-brand');
+  const heroLogo   = document.querySelector('.hero-logo');
+  const MOBILE_MAX = 540;
+
+  function isMobile() { return window.innerWidth <= MOBILE_MAX; }
+
+  // IntersectionObserver watches the hero logo element
+  const brandIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!isMobile()) {
+        // On desktop/tablet — always show the brand
+        navBrand.classList.remove('brand-hidden');
+        return;
+      }
+      // On mobile — hide when hero logo is intersecting, show when not
+      if (entry.isIntersecting) {
+        navBrand.classList.add('brand-hidden');
+      } else {
+        navBrand.classList.remove('brand-hidden');
+      }
+    });
+  }, {
+    threshold: 0.1  // fires when 10% of the hero logo is visible
+  });
+
+  if (heroLogo) brandIO.observe(heroLogo);
+
+  // Re-evaluate on resize (e.g. rotate phone to landscape)
+  window.addEventListener('resize', () => {
+    if (!isMobile()) navBrand.classList.remove('brand-hidden');
+  }, {passive:true});
+
+  // ── Scroll reveal ───────────────────────────────────────
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
       if (e.isIntersecting) {
