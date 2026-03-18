@@ -4,1049 +4,768 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Laban sa Cancer Month! | Evexia Wellness Center</title>
-
   <meta name="description" content="Join Evexia Wellness Center's FREE Cancer Awareness Lecture on March 27, 2026. FREE Lecture on Women's Health, Cancer Awareness & Rabies Prevention. PROMO: 20% Off Ultrasound Procedures. Sta. Rosa, Laguna.">
   <meta name="keywords" content="Cancer Prevention Month, Laban sa Cancer, Ultrasound Promo, Free Lecture, Evexia Wellness Center, Sta. Rosa Laguna, Breast Cancer, Prostate Cancer, Rabies Awareness">
   <meta name="author" content="Evexia Wellness Center">
-
   <meta property="og:title" content="Laban sa Cancer Month! | Evexia Wellness Center">
   <meta property="og:description" content="FREE Lecture. 20% Off Ultrasound. March 27, 2026 — Evexia Wellness Center, Sta. Rosa, Laguna.">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Evexia Wellness Center">
-
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="shortcut icon" href="assets/images/favicon.png">
   <link rel="apple-touch-icon" href="assets/images/favicon.png">
-
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+/* ─── TOKENS ─────────────────────────────────────────────── */
+:root{
+  --navy:#1B3A6B; --teal:#1A7A6E; --rose:#A63254;
+  --evx-g:#4CAF50; --evx-dg:#3D8B40;
+  --off:#F7F8FA; --white:#fff;
+  --td:#1E2530; --tm:#4A5568; --tl:#718096;
+  --border:#E8ECF0;
+  --sh-sm:0 1px 4px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.08);
+  --sh-md:0 4px 16px rgba(0,0,0,.1),0 8px 24px rgba(0,0,0,.08);
+  --r:20px;
+}
+/* ─── RESET ──────────────────────────────────────────────── */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--td);background:var(--off);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+img{display:block;max-width:100%;height:auto;}
+a{text-decoration:none;}
+/* ─── LAYOUT ─────────────────────────────────────────────── */
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 28px;}
+.sp{padding-top:88px;padding-bottom:88px;}
+.sp-sm{padding-top:52px;padding-bottom:52px;}
+/* ─── TYPE HELPERS ───────────────────────────────────────── */
+.eyebrow{display:block;font-size:11px;font-weight:800;letter-spacing:3.5px;text-transform:uppercase;color:var(--tl);margin-bottom:10px;text-align:center;}
+.eyebrow.lt{color:rgba(255,255,255,.5);}
+.h2{font-size:clamp(26px,4vw,42px);font-weight:800;letter-spacing:-.8px;line-height:1.15;margin-bottom:48px;}
+.h2.center{text-align:center;}
+.h2.white{color:#fff;}
+/* ─── NAVBAR ─────────────────────────────────────────────── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:18px 0;transition:background .35s,box-shadow .35s,padding .35s;}
+.nav.scrolled{background:rgba(255,255,255,.97);box-shadow:0 1px 0 var(--border),0 4px 16px rgba(0,0,0,.07);padding:10px 0;backdrop-filter:blur(12px);}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.nav-brand{display:flex;align-items:center;gap:10px;transition:opacity .2s;}
+.nav-brand:hover{opacity:.85;}
+.nav-logo{height:38px;width:auto;flex-shrink:0;transition:height .35s;}
+.nav.scrolled .nav-logo{height:33px;}
+.nav-name{font-size:16px;font-weight:700;color:#fff;white-space:nowrap;transition:color .35s;}
+.nav.scrolled .nav-name{color:var(--td);}
+.nav-right{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.nav-link{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;color:rgba(255,255,255,.9);padding:8px 14px;border-radius:8px;transition:color .2s,background .2s;}
+.nav-link:hover{background:rgba(255,255,255,.12);}
+.nav.scrolled .nav-link{color:var(--td);}
+.nav.scrolled .nav-link:hover{background:var(--off);color:var(--rose);}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#fff;background:var(--evx-g);padding:9px 20px;border-radius:50px;transition:background .2s,transform .2s;white-space:nowrap;}
+.nav-cta:hover{background:var(--evx-dg);transform:translateY(-1px);}
+/* ─── BUTTONS ────────────────────────────────────────────── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:inherit;font-weight:700;border-radius:50px;border:none;cursor:pointer;transition:transform .22s,box-shadow .22s,background .22s;white-space:nowrap;}
+.btn:hover{transform:translateY(-3px);}
+.btn:active{transform:translateY(-1px);}
+.btn-lg{font-size:15px;padding:17px 36px;}
+.btn-md{font-size:14px;padding:13px 28px;}
+.btn-g{background:linear-gradient(135deg,var(--evx-g),var(--evx-dg));color:#fff;box-shadow:0 6px 20px rgba(76,175,80,.4);animation:pulse-g 2.8s ease-in-out infinite;}
+.btn-g:hover{box-shadow:0 10px 28px rgba(76,175,80,.55);}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.4);backdrop-filter:blur(6px);}
+.btn-ghost:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.7);}
+.btn-fb{background:#1877F2;color:#fff;box-shadow:0 6px 20px rgba(24,119,242,.35);}
+.btn-fb:hover{background:#0d6fd1;box-shadow:0 10px 28px rgba(24,119,242,.5);}
+.btn-ig{background:linear-gradient(135deg,#833AB4,#E1306C,#F77737);color:#fff;box-shadow:0 6px 20px rgba(225,48,108,.35);}
+.btn-ig:hover{box-shadow:0 10px 28px rgba(225,48,108,.5);}
+@keyframes pulse-g{
+  0%,100%{box-shadow:0 6px 20px rgba(76,175,80,.4),0 0 0 0 rgba(76,175,80,.25);}
+  50%{box-shadow:0 6px 20px rgba(76,175,80,.4),0 0 0 10px rgba(76,175,80,0);}
+}
+/* ─── HERO ───────────────────────────────────────────────── */
+.hero{position:relative;min-height:100vh;background:linear-gradient(150deg,#0f2444 0%,#1B3A6B 30%,#6B1A38 70%,#A63254 100%);color:#fff;overflow:hidden;display:flex;align-items:center;padding-top:96px;padding-bottom:80px;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 15% 55%,rgba(26,122,110,.28) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 85% 20%,rgba(166,50,84,.35) 0%,transparent 60%);pointer-events:none;}
+.hcircle{position:absolute;border-radius:50%;pointer-events:none;}
+.hc1{width:520px;height:520px;top:-180px;right:-120px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);}
+.hc2{width:320px;height:320px;bottom:-100px;left:-80px;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.05);}
+.hero .wrap{position:relative;z-index:2;width:100%;}
+/* two-column grid */
+.hero-grid{display:grid;grid-template-columns:1fr 380px;gap:56px;align-items:center;}
+/* LEFT */
+.hero-left{}
+.hero-logo{margin-bottom:28px;animation:fadeUp .8s ease both;}
+.hero-logo img{height:110px;width:auto;}
+.hero-sup{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:18px;animation:fadeUp .8s ease .1s both;}
+.hero-dot{width:6px;height:6px;border-radius:50%;background:var(--evx-g);flex-shrink:0;}
+.hero-title{font-size:clamp(42px,7vw,80px);font-weight:800;line-height:1.05;letter-spacing:-2px;margin-bottom:20px;animation:fadeUp .8s ease .2s both;}
+.hero-title .accent{color:#F4A7B9;}
+.hero-sub{font-size:clamp(14px,1.6vw,17px);color:rgba(255,255,255,.72);line-height:1.8;margin-bottom:36px;animation:fadeUp .8s ease .3s both;}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px;animation:fadeUp .8s ease .4s both;}
+/* RIGHT — highlight cards */
+.hero-right{display:flex;flex-direction:column;gap:16px;animation:fadeUp .8s ease .5s both;}
+.hcard{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:22px 24px;display:flex;align-items:flex-start;gap:16px;backdrop-filter:blur(10px);transition:background .25s,transform .25s;}
+.hcard:hover{background:rgba(255,255,255,.13);transform:translateX(4px);}
+.hcard-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.hci-g{background:rgba(76,175,80,.25);color:#a8f0ab;}
+.hci-y{background:rgba(200,150,12,.25);color:#ffe08a;}
+.hci-w{background:rgba(255,255,255,.15);color:#fff;}
+.hcard-body{}
+.hcard-label{font-size:10px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:4px;}
+.hcard-title{font-size:16px;font-weight:800;color:#fff;margin-bottom:3px;line-height:1.3;}
+.hcard-desc{font-size:13px;color:rgba(255,255,255,.6);line-height:1.5;}
+.scroll-cue{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:5px;color:rgba(255,255,255,.45);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;animation:bob 2.4s ease infinite;}
+.scroll-cue i{font-size:20px;}
+@keyframes bob{0%,60%,100%{transform:translateX(-50%) translateY(0);}30%{transform:translateX(-50%) translateY(-8px);}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:none;}}
+/* ─── SCHEDULE ───────────────────────────────────────────── */
+.sched-sec{background:var(--navy);color:#fff;}
+.sched-grid{display:grid;grid-template-columns:repeat(3,1fr);background:rgba(255,255,255,.07);border-radius:var(--r);overflow:hidden;gap:1px;}
+.sched-cell{background:rgba(255,255,255,.05);padding:40px 32px;transition:background .25s;}
+.sched-cell:hover{background:rgba(255,255,255,.09);}
+.sched-cell+.sched-cell{border-left:1px solid rgba(255,255,255,.07);}
+.spill{display:inline-block;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:16px;}
+.sp-t{background:rgba(26,122,110,.3);color:#7DE8DF;}
+.sp-r{background:rgba(166,50,84,.3);color:#F4A7B9;}
+.sp-y{background:rgba(200,150,12,.25);color:#ffe08a;}
+.sched-time{font-size:clamp(38px,5vw,58px);font-weight:800;line-height:1;letter-spacing:-2px;margin-bottom:6px;}
+.sched-time sup{font-size:.38em;font-weight:700;letter-spacing:0;vertical-align:super;opacity:.7;}
+.sched-lbl{font-size:16px;font-weight:700;margin-bottom:8px;}
+.sched-desc{font-size:14px;color:rgba(255,255,255,.6);line-height:1.7;}
+.sched-hl{margin-top:14px;font-size:13px;font-weight:700;color:#a8f0ab;}
+/* ─── TOPICS ─────────────────────────────────────────────── */
+.topics-sec{background:var(--off);}
+.topics-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.tcard{background:var(--white);border-radius:var(--r);padding:36px 32px;box-shadow:var(--sh-sm);border-top:4px solid transparent;transition:transform .25s,box-shadow .25s;}
+.tcard:hover{transform:translateY(-4px);box-shadow:var(--sh-md);}
+.tcard-rose{border-top-color:var(--rose);}
+.tcard-teal{border-top-color:var(--teal);}
+.ticon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:20px;}
+.ticon-r{background:#FEE7EE;color:var(--rose);}
+.ticon-t{background:#E4F3F2;color:var(--teal);}
+.ttype{display:inline-block;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:16px;}
+.ttype-r{background:#FEE7EE;color:var(--rose);}
+.ttype-t{background:#E4F3F2;color:var(--teal);}
+.ttitle{font-size:clamp(18px,2.5vw,24px);font-weight:800;letter-spacing:-.4px;margin-bottom:10px;}
+.tbody{font-size:14px;color:var(--tm);line-height:1.8;margin-bottom:20px;}
+.tlist{list-style:none;}
+.tlist li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--td);padding:9px 0;border-bottom:1px solid var(--border);}
+.tlist li:last-child{border-bottom:none;}
+.tlist li i{font-size:12px;margin-top:3px;flex-shrink:0;}
+.li-r i{color:var(--rose);}
+.li-t i{color:var(--teal);}
+.tnote{margin-top:20px;padding:12px 16px;border-radius:10px;font-size:13px;font-weight:600;display:flex;gap:10px;align-items:flex-start;line-height:1.6;}
+.tnote-r{background:#FEE7EE;color:var(--rose);}
+.tnote-t{background:#E4F3F2;color:var(--teal);}
+.tnote i{margin-top:2px;flex-shrink:0;}
+/* ─── PROMO ──────────────────────────────────────────────── */
+.promo-sec{position:relative;overflow:hidden;background:linear-gradient(145deg,#1A7A6E 0%,#124F48 40%,#1B3A6B 100%);color:#fff;}
+.promo-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 65% at 80% 15%,rgba(166,50,84,.28) 0%,transparent 60%);pointer-events:none;}
+.promo-sec .wrap{position:relative;z-index:2;}
+.promo-top{text-align:center;}
+.promo-ann{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,220,80,.5);color:#ffe08a;font-size:12px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;padding:10px 22px;border-radius:50px;margin-bottom:24px;backdrop-filter:blur(6px);}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.pcard{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:var(--r);padding:32px 26px;backdrop-filter:blur(10px);transition:background .25s,transform .25s;display:flex;flex-direction:column;}
+.pcard:hover{background:rgba(255,255,255,.14);transform:translateY(-4px);}
+.pcard.feat{border-color:rgba(168,240,171,.4);background:rgba(76,175,80,.12);}
+.pc-lbl{font-size:11px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:6px;}
+.pc-name{font-size:clamp(17px,2vw,21px);font-weight:800;margin-bottom:4px;}
+.pc-sub{font-size:13px;color:rgba(255,255,255,.6);line-height:1.6;margin-bottom:20px;}
+.pc-div{height:1px;background:rgba(255,255,255,.12);margin-bottom:20px;}
+.pc-old{font-size:13px;color:rgba(255,255,255,.4);text-decoration:line-through;margin-bottom:4px;}
+.pc-price{font-size:clamp(30px,4vw,44px);font-weight:800;letter-spacing:-1px;line-height:1;color:#a8f0ab;margin-bottom:8px;}
+.pc-price .peso{font-size:.5em;font-weight:700;vertical-align:middle;margin-right:2px;}
+.pc-off{display:inline-block;align-self:flex-start;background:rgba(255,220,80,.2);border:1px solid rgba(255,220,80,.45);color:#ffe08a;font-size:11px;font-weight:800;letter-spacing:1px;padding:4px 14px;border-radius:20px;margin-bottom:20px;width:fit-content;}
+.pitems{list-style:none;flex:1;}
+.pitems li{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:rgba(255,255,255,.78);padding:7px 0;border-bottom:1px solid rgba(255,255,255,.08);line-height:1.5;}
+.pitems li:last-child{border-bottom:none;}
+.pitems li i{color:#a8f0ab;font-size:11px;margin-top:3px;flex-shrink:0;}
+.pip{display:block;font-size:12px;color:rgba(255,255,255,.45);margin-top:2px;}
+.pip-val{color:#a8f0ab;font-weight:700;}
+.promo-ft{margin-top:48px;display:flex;flex-direction:column;align-items:center;gap:14px;padding-bottom:52px;}
+/* ─── TICKER BAR ─────────────────────────────────────────── */
+.ticker-bar{background:#3A4A5C;padding:16px 0;width:100%;}
+.ticker-inner{display:flex;align-items:center;justify-content:center;gap:14px;padding:0 24px;text-align:center;}
+.ticker-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.6);flex-shrink:0;animation:tickpulse 2s ease-in-out infinite;}
+.ticker-text{font-size:14px;font-weight:700;color:rgba(255,255,255,.9);letter-spacing:.3px;line-height:1.5;}
+.ticker-text strong{font-weight:800;color:#fff;}
+@keyframes tickpulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.35;transform:scale(.65);}}
+/* ─── FLOW ───────────────────────────────────────────────── */
+.flow-sec{background:var(--white);}
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;position:relative;}
+.fgrid::before{content:'';position:absolute;top:48px;left:calc(100%/6 + 16px);right:calc(100%/6 + 16px);height:2px;background:linear-gradient(90deg,var(--teal),var(--rose));z-index:0;}
+.fstep{text-align:center;padding:0 16px;position:relative;z-index:1;}
+.fnum{width:96px;height:96px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:800;color:#fff;margin:0 auto 24px;transition:transform .25s;}
+.fnum:hover{transform:scale(1.08);}
+.fn1{background:var(--teal);box-shadow:0 8px 24px rgba(26,122,110,.35);}
+.fn2{background:var(--rose);box-shadow:0 8px 24px rgba(166,50,84,.35);}
+.fn3{background:var(--navy);box-shadow:0 8px 24px rgba(27,58,107,.35);}
+.ftitle{font-size:18px;font-weight:800;margin-bottom:10px;}
+.fbody{font-size:14px;color:var(--tm);line-height:1.8;margin-bottom:14px;}
+.ftag{display:inline-block;font-size:12px;font-weight:700;padding:6px 14px;border-radius:20px;}
+.ft-t{background:#E4F3F2;color:var(--teal);}
+.ft-r{background:#FEE7EE;color:var(--rose);}
+.ft-n{background:#EEF1F8;color:var(--navy);}
+/* ─── REMINDERS ──────────────────────────────────────────── */
+.rem-sec{background:var(--navy);color:#fff;}
+.rem-heading{font-size:clamp(22px,3vw,32px);font-weight:800;color:#fff;text-align:center;margin-bottom:36px;letter-spacing:-.5px;}
+.rem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.rcard{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:28px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;transition:background .25s,transform .25s;}
+.rcard:hover{background:rgba(255,255,255,.12);transform:translateY(-3px);}
+.rcard-icon{width:56px;height:56px;border-radius:16px;background:rgba(255,220,80,.15);border:1px solid rgba(255,220,80,.3);display:flex;align-items:center;justify-content:center;font-size:24px;color:#ffe08a;flex-shrink:0;}
+.rcard-title{font-size:15px;font-weight:800;color:#fff;line-height:1.3;}
+.rcard-desc{font-size:13px;color:rgba(255,255,255,.55);line-height:1.6;}
+/* ─── DOCTOR ─────────────────────────────────────────────── */
+.doc-sec{background:var(--off);}
+.dcard{background:var(--white);border-radius:28px;box-shadow:var(--sh-md);padding:48px;display:flex;align-items:center;gap:44px;max-width:820px;margin:0 auto;}
+.davatar{width:128px;height:128px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));display:flex;align-items:center;justify-content:center;font-size:48px;color:#fff;flex-shrink:0;box-shadow:0 8px 28px rgba(26,122,110,.3);}
+.dbody{flex:1;min-width:0;}
+.deyebrow{font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:8px;}
+.dname{font-size:clamp(22px,3vw,30px);font-weight:800;letter-spacing:-.5px;margin-bottom:6px;}
+.dtitle{font-size:14px;color:var(--tm);line-height:1.6;margin-bottom:20px;}
+.dcert{display:inline-flex;align-items:center;gap:8px;background:#E4F3F2;color:var(--teal);font-size:13px;font-weight:700;padding:8px 18px;border-radius:50px;}
+/* ─── LOCATION ───────────────────────────────────────────── */
+.loc-sec{background:var(--white);}
+.lgrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.ldet{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--border);}
+.ldet:last-child{border-bottom:none;}
+.licon{width:42px;height:42px;border-radius:12px;background:#EEF1F8;color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;}
+.ldet h4{font-size:14px;font-weight:700;margin-bottom:5px;}
+.ldet p{font-size:14px;color:var(--tm);line-height:1.7;}
+.mapwrap{border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-md);height:400px;background:var(--border);}
+.mapwrap iframe{width:100%;height:100%;border:none;display:block;}
+/* ─── COMBINED CTA + SOCIAL ──────────────────────────────── */
+.connect-sec{position:relative;overflow:hidden;background:linear-gradient(145deg,#6B1A38 0%,var(--rose) 45%,#1B3A6B 100%);color:#fff;text-align:center;}
+.connect-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 50% 50%,rgba(26,122,110,.22) 0%,transparent 65%);pointer-events:none;}
+.connect-sec .wrap{position:relative;z-index:2;}
+.connect-h{font-size:clamp(34px,5.5vw,62px);font-weight:800;letter-spacing:-1.5px;margin-bottom:14px;}
+.connect-p{font-size:clamp(15px,1.8vw,18px);color:rgba(255,255,255,.75);max-width:500px;margin:0 auto 36px;line-height:1.75;}
+.connect-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-bottom:56px;}
+.connect-divider{width:60px;height:1px;background:rgba(255,255,255,.2);margin:0 auto 44px;}
+.connect-sub-h{font-size:clamp(18px,2.5vw,26px);font-weight:800;margin-bottom:12px;letter-spacing:-.5px;}
+.connect-sub-p{font-size:14px;color:rgba(255,255,255,.6);max-width:440px;margin:0 auto 32px;line-height:1.75;}
+.connect-social{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
+/* ─── FOOTER ─────────────────────────────────────────────── */
+footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;padding:32px 24px;}
+footer p{font-size:13px;line-height:1.8;}
+footer a{color:rgba(255,255,255,.5);transition:color .2s;}
+footer a:hover{color:#fff;}
+/* ─── REVEAL ─────────────────────────────────────────────── */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease;}
+.rv.in{opacity:1;transform:none;}
 
-  <style>
-    :root {
-      --navy:   #1B3A6B;
-      --teal:   #1A7A6E;
-      --rose:   #A63254;
-      --rose-light: #C43060;
-      --gold:   #C8960C;
-      --evexia-red:   #E63946;
-      --evexia-green: #4CAF50;
-      --dark-green:   #3D8B40;
-      --white:  #FFFFFF;
-      --off-white: #FAFAFA;
-      --text-dark: #2D3436;
-      --text-gray: #636E72;
-      --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
-      --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
-      --shadow-lg: 0 8px 32px rgba(0,0,0,0.18);
-    }
+/* ═══════════════════════════════════════════
+   TABLET  ≤ 900px
+═══════════════════════════════════════════ */
+@media(max-width:900px){
+  .wrap{padding:0 20px;}
+  /* nav */
+  .nav-name{display:none;}
+  /* hero */
+  .hero{padding-top:86px;padding-bottom:64px;}
+  .hero-grid{grid-template-columns:1fr;gap:40px;}
+  .hero-logo img{height:88px;}
+  .hero-title{font-size:clamp(38px,9vw,62px);letter-spacing:-1.5px;}
+  .hero-right{flex-direction:row;flex-wrap:wrap;}
+  .hcard{flex:1;min-width:200px;}
+  /* schedule */
+  .sched-grid{grid-template-columns:1fr;gap:1px;}
+  .sched-cell+.sched-cell{border-left:none;border-top:1px solid rgba(255,255,255,.07);}
+  .sched-cell{padding:28px 24px;}
+  /* topics */
+  .topics-grid{grid-template-columns:1fr;}
+  /* promo */
+  .pgrid{grid-template-columns:1fr;}
+  /* flow */
+  .fgrid{grid-template-columns:1fr;gap:0;}
+  .fgrid::before{display:none;}
+  .fstep{display:flex;align-items:flex-start;gap:24px;text-align:left;padding:24px 0;border-bottom:1px solid var(--border);}
+  .fstep:last-child{border-bottom:none;}
+  .fnum{width:72px;height:72px;font-size:24px;margin:0;flex-shrink:0;}
+  /* doctor */
+  .dcard{flex-direction:column;align-items:center;text-align:center;padding:36px 24px;gap:24px;}
+  .davatar{width:100px;height:100px;font-size:38px;}
+  /* location */
+  .lgrid{grid-template-columns:1fr;gap:28px;}
+  .mapwrap{height:320px;}
+  /* cta */
+  .cta-btns{flex-direction:column;align-items:center;}
+  .cta-btns .btn{width:100%;max-width:320px;}
+  /* social */
+  .soc-btns{flex-direction:column;align-items:center;}
+  .soc-btns .btn{width:100%;max-width:320px;}
+  /* reminders */
+  .rem-grid{grid-template-columns:repeat(2,1fr);}
+  /* connect */
+  .connect-btns,.connect-social{flex-direction:column;align-items:center;}
+  .connect-btns .btn,.connect-social .btn{width:100%;max-width:320px;}
+}
 
-    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      color: var(--text-dark);
-      background: var(--off-white);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* ── NAVBAR ─────────────────────────────────────────────── */
-    .navbar {
-      position: fixed; top:0; left:0; width:100%;
-      padding: 20px 0;
-      background: transparent;
-      transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
-      z-index: 1000;
-      backdrop-filter: blur(0px);
-    }
-    .navbar.scrolled {
-      background: rgba(255,255,255,0.97);
-      box-shadow: var(--shadow-sm);
-      backdrop-filter: blur(12px);
-      padding: 12px 0;
-    }
-    .nav-container {
-      max-width: 1280px; margin:0 auto;
-      padding: 0 40px;
-      display:flex; justify-content:space-between; align-items:center;
-    }
-    .brand a {
-      display:flex; align-items:center; gap:12px;
-      text-decoration:none; transition: transform 0.3s ease;
-    }
-    .brand a:hover { transform: translateY(-2px); }
-    .brand-logo { height:42px; width:auto; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15)); }
-    .navbar.scrolled .brand-logo { height:36px; }
-    .brand-text {
-      font-size:20px; font-weight:700; color:white;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      white-space:nowrap; transition: all 0.3s ease;
-    }
-    .navbar.scrolled .brand-text { color: var(--text-dark); text-shadow:none; font-size:18px; }
-    .nav-links { display:flex; gap:20px; align-items:center; }
-    .nav-links a {
-      font-size:15px; font-weight:600; color:white;
-      text-decoration:none; padding:8px 16px; border-radius:8px;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
-      transition: all 0.3s ease;
-    }
-    .navbar.scrolled .nav-links a { color: var(--text-dark); text-shadow:none; }
-    .nav-links a:hover { color: var(--rose); transform: translateY(-2px); }
-
-    /* ── HERO ────────────────────────────────────────────────── */
-    .hero {
-      min-height: 100vh;
-      background: linear-gradient(145deg, #1B3A6B 0%, #2A1A5E 30%, #7A1A40 65%, #A63254 100%);
-      display:flex; flex-direction:column;
-      align-items:center; justify-content:center;
-      color:white; position:relative; overflow:hidden;
-      padding: 130px 40px 100px;
-    }
-
-    /* animated particle ribbons */
-    .hero::before {
-      content:'';
-      position:absolute; inset:0;
-      background:
-        radial-gradient(ellipse at 20% 50%, rgba(166,50,84,0.35) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 20%, rgba(26,122,110,0.25) 0%, transparent 55%),
-        radial-gradient(ellipse at 60% 80%, rgba(27,58,107,0.4) 0%, transparent 50%);
-      animation: shimmer 8s ease-in-out infinite alternate;
-    }
-    @keyframes shimmer {
-      0%   { opacity:0.6; }
-      100% { opacity:1; }
-    }
-
-    /* floating ribbon shapes */
-    .ribbon {
-      position:absolute; border-radius:50%;
-      background: rgba(255,255,255,0.04);
-      animation: floatRibbon 12s ease-in-out infinite;
-    }
-    .ribbon-1 { width:500px; height:500px; top:-150px; right:-100px; animation-delay:0s; }
-    .ribbon-2 { width:300px; height:300px; bottom:-80px; left:-60px; animation-delay:4s; }
-    .ribbon-3 { width:200px; height:200px; top:40%; left:10%; animation-delay:2s; }
-    @keyframes floatRibbon {
-      0%,100% { transform: translateY(0) rotate(0deg); }
-      50%      { transform: translateY(-30px) rotate(15deg); }
-    }
-
-    .hero-content {
-      max-width:1100px; width:100%;
-      position:relative; z-index:2;
-      text-align:left; padding-left:20px;
-    }
-    .hero-logo {
-      margin-bottom: 24px;
-      animation: fadeInUp 1s ease both;
-    }
-    .hero-logo img { height:120px; width:auto; filter: drop-shadow(0 4px 16px rgba(0,0,0,0.3)); }
-
-    .hero-eyebrow {
-      font-size: clamp(11px,1.5vw,14px);
-      font-weight:700; letter-spacing:4px;
-      text-transform:uppercase; color:rgba(255,255,255,0.7);
-      margin-bottom:16px;
-      animation: fadeInUp 1s ease 0.1s both;
-    }
-
-    .hero-title {
-      font-size: clamp(44px,9vw,96px);
-      font-weight:800; line-height:1.05;
-      letter-spacing:-2px; margin-bottom:20px;
-      animation: fadeInUp 1s ease 0.2s both;
-    }
-    .hero-title span.accent { color: #F4A7B9; }
-
-    .hero-tagline {
-      font-size: clamp(14px,2vw,20px);
-      font-weight:500; opacity:0.88;
-      margin-bottom:48px; max-width:520px;
-      animation: fadeInUp 1s ease 0.35s both;
-      line-height:1.7;
-    }
-
-    .hero-ctas {
-      display:flex; gap:18px; flex-wrap:wrap;
-      animation: fadeInUp 1s ease 0.5s both;
-    }
-
-    .btn-primary {
-      display:inline-flex; align-items:center; gap:12px;
-      padding:20px 44px;
-      background: linear-gradient(135deg, var(--evexia-green), var(--dark-green));
-      color:white; font-size:16px; font-weight:800;
-      text-decoration:none; border-radius:50px;
-      text-transform:uppercase; letter-spacing:1px;
-      box-shadow: 0 8px 28px rgba(76,175,80,0.45), 0 0 0 3px rgba(255,255,255,0.3);
-      transition: all 0.3s ease;
-      animation: pulseCTA 2.5s ease-in-out infinite;
-    }
-    .btn-primary:hover {
-      transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 14px 36px rgba(76,175,80,0.55), 0 0 0 3px rgba(255,255,255,0.5);
-    }
-    @keyframes pulseCTA {
-      0%,100% { box-shadow: 0 8px 28px rgba(76,175,80,0.45), 0 0 0 3px rgba(255,255,255,0.3); }
-      50%      { box-shadow: 0 8px 28px rgba(76,175,80,0.45), 0 0 0 8px rgba(255,255,255,0); }
-    }
-
-    .btn-secondary {
-      display:inline-flex; align-items:center; gap:10px;
-      padding:20px 36px;
-      background: rgba(255,255,255,0.12);
-      border:2px solid rgba(255,255,255,0.5);
-      color:white; font-size:15px; font-weight:700;
-      text-decoration:none; border-radius:50px;
-      letter-spacing:0.5px;
-      backdrop-filter: blur(8px);
-      transition: all 0.3s ease;
-    }
-    .btn-secondary:hover {
-      background: rgba(255,255,255,0.22);
-      border-color:white;
-      transform: translateY(-3px);
-    }
-
-    .hero-badges {
-      display:flex; gap:16px; flex-wrap:wrap; margin-top:44px;
-      animation: fadeInUp 1s ease 0.65s both;
-    }
-    .badge {
-      display:inline-flex; align-items:center; gap:8px;
-      background: rgba(255,255,255,0.1);
-      border:1px solid rgba(255,255,255,0.25);
-      padding:10px 20px; border-radius:40px;
-      font-size:13px; font-weight:600;
-      backdrop-filter: blur(6px);
-    }
-    .badge i { font-size:14px; }
-    .badge.free { border-color:rgba(76,175,80,0.6); color:#a8f0ab; }
-    .badge.promo { border-color:rgba(255,200,80,0.6); color:#ffe08a; }
-    .badge.date { border-color:rgba(255,255,255,0.4); }
-
-    .scroll-indicator {
-      position:absolute; bottom:36px; left:50%;
-      transform:translateX(-50%);
-      animation: bounce 2s infinite;
-      cursor:pointer; z-index:10;
-    }
-    .scroll-indicator i { font-size:28px; color:rgba(255,255,255,0.6); }
-    @keyframes bounce {
-      0%,20%,50%,80%,100% { transform:translateX(-50%) translateY(0); }
-      40% { transform:translateX(-50%) translateY(-10px); }
-      60% { transform:translateX(-50%) translateY(-5px); }
-    }
-
-    /* ── EVENT SCHEDULE ──────────────────────────────────────── */
-    .schedule-section {
-      background: var(--navy);
-      color:white; padding:80px 40px;
-    }
-    .section-inner { max-width:1100px; margin:0 auto; }
-    .section-eyebrow {
-      font-size:12px; font-weight:700; letter-spacing:4px;
-      text-transform:uppercase; color:rgba(255,255,255,0.5);
-      margin-bottom:10px; text-align:center;
-    }
-    .section-title {
-      font-size: clamp(28px,4vw,44px);
-      font-weight:800; text-align:center;
-      margin-bottom:56px; letter-spacing:-1px;
-    }
-    .schedule-grid {
-      display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
-    }
-    .schedule-card {
-      background: rgba(255,255,255,0.07);
-      border:1px solid rgba(255,255,255,0.12);
-      border-radius:20px; padding:36px 28px;
-      text-align:center;
-      transition: transform 0.3s ease, background 0.3s ease;
-      position:relative; overflow:hidden;
-    }
-    .schedule-card::before {
-      content:''; position:absolute;
-      top:0; left:0; right:0; height:3px;
-    }
-    .schedule-card.card-navy::before { background: var(--teal); }
-    .schedule-card.card-teal::before { background: var(--rose); }
-    .schedule-card.card-rose::before { background: var(--gold); }
-    .schedule-card:hover { transform:translateY(-6px); background:rgba(255,255,255,0.1); }
-    .schedule-time {
-      font-size:13px; font-weight:700; letter-spacing:2px;
-      text-transform:uppercase; opacity:0.6; margin-bottom:12px;
-    }
-    .schedule-time-big {
-      font-size: clamp(34px,4vw,52px);
-      font-weight:800; line-height:1; margin-bottom:8px;
-    }
-    .schedule-time-big span { font-size:0.45em; font-weight:600; opacity:0.7; }
-    .schedule-label {
-      font-size:16px; font-weight:600; margin-bottom:10px;
-    }
-    .schedule-desc { font-size:14px; opacity:0.65; line-height:1.7; }
-
-    /* ── LECTURE TOPICS ──────────────────────────────────────── */
-    .topics-section { padding:90px 40px; background:var(--off-white); }
-    .topics-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:56px; }
-
-    .topic-card {
-      background:white; border-radius:20px; padding:40px 36px;
-      box-shadow: var(--shadow-sm);
-      border-left:5px solid transparent;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position:relative; overflow:hidden;
-    }
-    .topic-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-md); }
-    .topic-card.primary { border-left-color: var(--rose); }
-    .topic-card.secondary { border-left-color: var(--teal); }
-
-    .topic-badge {
-      display:inline-block;
-      font-size:11px; font-weight:800; letter-spacing:2px;
-      text-transform:uppercase; padding:6px 14px; border-radius:20px;
-      margin-bottom:20px;
-    }
-    .primary .topic-badge { background:#FEE7EE; color:var(--rose); }
-    .secondary .topic-badge { background:#E6F4F2; color:var(--teal); }
-
-    .topic-icon {
-      width:56px; height:56px; border-radius:16px;
-      display:flex; align-items:center; justify-content:center;
-      font-size:24px; margin-bottom:20px;
-    }
-    .primary .topic-icon { background:#FEE7EE; color:var(--rose); }
-    .secondary .topic-icon { background:#E6F4F2; color:var(--teal); }
-
-    .topic-title {
-      font-size: clamp(20px,2.5vw,26px);
-      font-weight:800; margin-bottom:12px; letter-spacing:-0.5px;
-    }
-    .topic-desc { font-size:15px; color:var(--text-gray); line-height:1.8; margin-bottom:20px; }
-
-    .topic-items { list-style:none; }
-    .topic-items li {
-      display:flex; align-items:flex-start; gap:10px;
-      font-size:14px; color:var(--text-dark);
-      padding:8px 0; border-bottom:1px solid #f0f0f0;
-    }
-    .topic-items li:last-child { border-bottom:none; }
-    .topic-items li i { margin-top:3px; font-size:13px; flex-shrink:0; }
-    .primary .topic-items li i { color:var(--rose); }
-    .secondary .topic-items li i { color:var(--teal); }
-
-    .topic-note {
-      margin-top:20px; padding:14px 16px;
-      border-radius:10px; font-size:13px; font-weight:500;
-      display:flex; gap:10px; align-items:flex-start;
-    }
-    .primary .topic-note { background:#FEE7EE; color:var(--rose); }
-    .secondary .topic-note { background:#E6F4F2; color:var(--teal); }
-
-    /* ── ULTRASOUND PROMO ────────────────────────────────────── */
-    .promo-section {
-      padding:90px 40px;
-      background: linear-gradient(135deg, #1A7A6E 0%, #1B3A6B 100%);
-      color:white; position:relative; overflow:hidden;
-    }
-    .promo-section::before {
-      content:'';
-      position:absolute; inset:0;
-      background: radial-gradient(ellipse at 70% 30%, rgba(166,50,84,0.3) 0%, transparent 60%);
-    }
-    .promo-section .section-inner { position:relative; z-index:2; }
-
-    .promo-badge-large {
-      display:inline-flex; align-items:center; gap:10px;
-      background: rgba(255,255,255,0.15);
-      border:2px solid rgba(255,255,255,0.4);
-      padding:10px 24px; border-radius:40px;
-      font-size:13px; font-weight:700; letter-spacing:2px;
-      text-transform:uppercase; margin-bottom:24px;
-      backdrop-filter:blur(8px);
-      color:#ffe08a;
-    }
-
-    .promo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:52px; }
-
-    .promo-card {
-      background: rgba(255,255,255,0.1);
-      border:1px solid rgba(255,255,255,0.2);
-      border-radius:20px; padding:36px 28px;
-      text-align:center;
-      backdrop-filter: blur(10px);
-      transition: transform 0.3s ease, background 0.3s ease;
-      position:relative; overflow:hidden;
-    }
-    .promo-card:hover { transform:translateY(-6px); background:rgba(255,255,255,0.15); }
-
-    .promo-card-label {
-      font-size:11px; font-weight:800; letter-spacing:3px;
-      text-transform:uppercase; opacity:0.65; margin-bottom:8px;
-    }
-    .promo-card-name {
-      font-size: clamp(18px,2vw,22px);
-      font-weight:800; margin-bottom:6px; letter-spacing:-0.5px;
-    }
-    .promo-card-sub {
-      font-size:13px; opacity:0.65; margin-bottom:24px; line-height:1.6;
-    }
-    .promo-old-price {
-      font-size:15px; color:rgba(255,255,255,0.45);
-      text-decoration:line-through; margin-bottom:4px;
-    }
-    .promo-new-price {
-      font-size: clamp(32px,4vw,48px);
-      font-weight:800; letter-spacing:-1px; line-height:1;
-      color:#a8f0ab;
-    }
-    .promo-new-price span { font-size:0.45em; font-weight:600; vertical-align:super; }
-    .promo-currency { font-size:0.45em; font-weight:700; }
-    .promo-off-tag {
-      display:inline-block; margin-top:10px;
-      background: rgba(255,220,80,0.25);
-      border:1px solid rgba(255,220,80,0.5);
-      color:#ffe08a; font-size:12px; font-weight:800;
-      padding:4px 12px; border-radius:20px; letter-spacing:1px;
-    }
-    .promo-items {
-      margin-top:20px; text-align:left;
-      list-style:none;
-    }
-    .promo-items li {
-      font-size:13px; opacity:0.8; padding:6px 0;
-      border-bottom:1px solid rgba(255,255,255,0.1);
-      display:flex; gap:8px; align-items:center;
-    }
-    .promo-items li:last-child { border-bottom:none; }
-    .promo-items li i { font-size:11px; color:#a8f0ab; flex-shrink:0; }
-
-    .promo-cta-row {
-      margin-top:52px; text-align:center;
-    }
-    .promo-note {
-      margin-top:20px; font-size:14px; opacity:0.65;
-    }
-
-    /* ── HOW IT WORKS ────────────────────────────────────────── */
-    .flow-section { padding:90px 40px; background:white; }
-    .flow-grid {
-      display:grid; grid-template-columns:repeat(3,1fr); gap:0;
-      margin-top:56px; position:relative;
-    }
-    .flow-grid::before {
-      content:'';
-      position:absolute; top:48px; left:calc(100%/6);
-      right:calc(100%/6); height:2px;
-      background: linear-gradient(90deg, var(--teal), var(--rose));
-      z-index:0;
-    }
-    .flow-step {
-      text-align:center; padding:0 30px;
-      position:relative; z-index:1;
-    }
-    .step-number {
-      width:96px; height:96px; border-radius:50%;
-      display:flex; align-items:center; justify-content:center;
-      font-size:32px; font-weight:800;
-      margin:0 auto 24px;
-      position:relative;
-      transition: transform 0.3s ease;
-    }
-    .step-number:hover { transform:scale(1.1); }
-    .flow-step:nth-child(1) .step-number { background:var(--teal); color:white; box-shadow:0 8px 24px rgba(26,122,110,0.35); }
-    .flow-step:nth-child(2) .step-number { background:var(--rose); color:white; box-shadow:0 8px 24px rgba(166,50,84,0.35); }
-    .flow-step:nth-child(3) .step-number { background:var(--navy); color:white; box-shadow:0 8px 24px rgba(27,58,107,0.35); }
-    .step-title { font-size:20px; font-weight:800; margin-bottom:10px; }
-    .step-desc { font-size:14px; color:var(--text-gray); line-height:1.8; }
-    .step-tag {
-      display:inline-block; margin-top:14px;
-      font-size:12px; font-weight:700; letter-spacing:1px;
-      padding:6px 14px; border-radius:20px; text-transform:uppercase;
-    }
-    .flow-step:nth-child(1) .step-tag { background:#E6F4F2; color:var(--teal); }
-    .flow-step:nth-child(2) .step-tag { background:#FEE7EE; color:var(--rose); }
-    .flow-step:nth-child(3) .step-tag { background:#EEF1F8; color:var(--navy); }
-
-    /* ── REMINDERS ───────────────────────────────────────────── */
-    .reminders-section {
-      background:var(--navy); color:white; padding:60px 40px;
-    }
-    .reminders-inner {
-      max-width:1100px; margin:0 auto;
-      display:flex; gap:20px; align-items:center; flex-wrap:wrap;
-    }
-    .reminders-label {
-      font-size:11px; font-weight:800; letter-spacing:3px;
-      text-transform:uppercase; opacity:0.6; white-space:nowrap;
-      margin-right:10px;
-    }
-    .reminder-pill {
-      display:inline-flex; align-items:center; gap:8px;
-      background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2);
-      padding:12px 22px; border-radius:40px;
-      font-size:14px; font-weight:600;
-    }
-    .reminder-pill i { color:#ffe08a; font-size:14px; }
-
-    /* ── DOCTOR SECTION ──────────────────────────────────────── */
-    .doctor-section { padding:90px 40px; background:var(--off-white); }
-    .doctor-card {
-      max-width:860px; margin:56px auto 0;
-      background:white; border-radius:24px;
-      box-shadow:var(--shadow-md);
-      padding:52px 48px;
-      display:flex; gap:48px; align-items:center;
-    }
-    .doctor-avatar {
-      width:140px; height:140px; border-radius:50%; flex-shrink:0;
-      background: linear-gradient(135deg, var(--navy), var(--teal));
-      display:flex; align-items:center; justify-content:center;
-      font-size:52px; color:white;
-      box-shadow: 0 8px 28px rgba(26,122,110,0.3);
-    }
-    .doctor-info { flex:1; }
-    .doctor-eyebrow {
-      font-size:11px; font-weight:700; letter-spacing:3px;
-      text-transform:uppercase; color:var(--teal); margin-bottom:10px;
-    }
-    .doctor-name {
-      font-size:clamp(22px,3vw,32px); font-weight:800;
-      letter-spacing:-0.5px; margin-bottom:6px;
-    }
-    .doctor-title { font-size:15px; color:var(--text-gray); margin-bottom:20px; }
-    .doctor-cert {
-      display:inline-flex; align-items:center; gap:8px;
-      background:#E6F4F2; color:var(--teal);
-      padding:8px 16px; border-radius:30px;
-      font-size:13px; font-weight:700;
-    }
-    .doctor-cert i { font-size:13px; }
-
-    /* ── LOCATION ────────────────────────────────────────────── */
-    .location-section { padding:90px 40px; background:white; }
-    .location-grid {
-      display:grid; grid-template-columns:1fr 1fr; gap:48px;
-      margin-top:56px; align-items:start;
-    }
-    .location-detail {
-      display:flex; gap:18px; align-items:flex-start;
-      padding:24px 0; border-bottom:1px solid #f0f0f0;
-    }
-    .location-detail:last-child { border-bottom:none; }
-    .location-icon {
-      width:44px; height:44px; border-radius:12px;
-      background:#EEF1F8; color:var(--navy);
-      display:flex; align-items:center; justify-content:center;
-      font-size:18px; flex-shrink:0;
-    }
-    .location-detail h4 { font-size:15px; font-weight:700; margin-bottom:6px; }
-    .location-detail p { font-size:14px; color:var(--text-gray); line-height:1.7; }
-    .map-wrap {
-      border-radius:20px; overflow:hidden;
-      box-shadow:var(--shadow-md);
-      height:420px;
-    }
-    .map-wrap iframe { width:100%; height:100%; border:0; display:block; }
-
-    /* ── CTA BANNER ──────────────────────────────────────────── */
-    .cta-section {
-      padding:100px 40px;
-      background: linear-gradient(145deg, #7A1A40 0%, #A63254 40%, #1B3A6B 100%);
-      color:white; text-align:center; position:relative; overflow:hidden;
-    }
-    .cta-section::before {
-      content:'';
-      position:absolute; inset:0;
-      background: radial-gradient(ellipse at 50% 50%, rgba(26,122,110,0.3) 0%, transparent 65%);
-    }
-    .cta-section .section-inner { position:relative; z-index:2; }
-    .cta-title { font-size:clamp(32px,5vw,60px); font-weight:800; letter-spacing:-1.5px; margin-bottom:16px; }
-    .cta-sub { font-size:clamp(15px,2vw,20px); opacity:0.8; margin-bottom:44px; max-width:540px; margin-left:auto; margin-right:auto; line-height:1.7; }
-    .cta-options {
-      display:flex; gap:20px; justify-content:center; flex-wrap:wrap;
-    }
-    .btn-fb {
-      display:inline-flex; align-items:center; gap:12px;
-      padding:20px 44px;
-      background:#1877F2; color:white;
-      font-size:16px; font-weight:800;
-      text-decoration:none; border-radius:50px;
-      text-transform:uppercase; letter-spacing:1px;
-      box-shadow:0 8px 28px rgba(24,119,242,0.45);
-      transition:all 0.3s ease;
-    }
-    .btn-fb:hover { background:#0d6fd1; transform:translateY(-4px); box-shadow:0 14px 36px rgba(24,119,242,0.5); }
-    .btn-msg {
-      display:inline-flex; align-items:center; gap:12px;
-      padding:20px 44px;
-      background: linear-gradient(135deg, var(--evexia-green), var(--dark-green));
-      color:white; font-size:16px; font-weight:800;
-      text-decoration:none; border-radius:50px;
-      text-transform:uppercase; letter-spacing:1px;
-      box-shadow:0 8px 28px rgba(76,175,80,0.45);
-      transition:all 0.3s ease;
-      animation:pulseCTA 2.5s ease-in-out infinite;
-    }
-    .btn-msg:hover { transform:translateY(-4px); box-shadow:0 14px 36px rgba(76,175,80,0.55); }
-
-    /* ── SOCIAL ──────────────────────────────────────────────── */
-    .social-section { padding:80px 40px; background:var(--off-white); text-align:center; }
-    .social-desc { max-width:560px; margin:16px auto 40px; font-size:16px; color:var(--text-gray); line-height:1.8; }
-    .social-links { display:flex; gap:18px; justify-content:center; flex-wrap:wrap; }
-    .social-link {
-      display:inline-flex; align-items:center; gap:10px;
-      padding:16px 36px; border-radius:50px;
-      font-size:15px; font-weight:700;
-      text-decoration:none; transition:all 0.3s ease;
-      box-shadow:var(--shadow-sm);
-    }
-    .social-link.facebook { background:#1877F2; color:white; }
-    .social-link.facebook:hover { background:#0d6fd1; transform:translateY(-3px); box-shadow:0 8px 20px rgba(24,119,242,0.35); }
-    .social-link.instagram { background:linear-gradient(135deg,#E1306C,#F77737,#FCAF45); color:white; }
-    .social-link.instagram:hover { transform:translateY(-3px); box-shadow:0 8px 20px rgba(225,48,108,0.35); }
-
-    /* ── FOOTER ──────────────────────────────────────────────── */
-    footer {
-      background:var(--navy); color:rgba(255,255,255,0.6);
-      padding:36px 40px; text-align:center;
-    }
-    .footer-inner { max-width:1100px; margin:0 auto; }
-    footer p { font-size:14px; margin-bottom:6px; }
-    footer a { color:rgba(255,255,255,0.5); text-decoration:none; transition:color 0.3s ease; }
-    footer a:hover { color:white; }
-    .footer-credit { font-size:13px; opacity:0.5; }
-    .footer-credit a { color:rgba(255,255,255,0.5); }
-    .footer-credit a:hover { color:white; }
-
-    /* ── ANIMATIONS ──────────────────────────────────────────── */
-    @keyframes fadeInUp {
-      from { opacity:0; transform:translateY(30px); }
-      to   { opacity:1; transform:translateY(0); }
-    }
-    @keyframes fadeIn {
-      from { opacity:0; } to { opacity:1; }
-    }
-
-    .reveal {
-      opacity:0; transform:translateY(28px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .reveal.visible { opacity:1; transform:translateY(0); }
-
-    /* ── RESPONSIVE ──────────────────────────────────────────── */
-    @media(max-width:900px){
-      .schedule-grid, .promo-grid, .topics-grid, .location-grid { grid-template-columns:1fr; }
-      .flow-grid { grid-template-columns:1fr; }
-      .flow-grid::before { display:none; }
-      .flow-step { margin-bottom:36px; }
-      .doctor-card { flex-direction:column; text-align:center; padding:40px 28px; }
-      .hero-ctas { flex-direction:column; }
-      .btn-primary, .btn-secondary, .btn-fb, .btn-msg { width:100%; max-width:340px; justify-content:center; }
-    }
-    @media(max-width:600px){
-      .hero { padding:100px 24px 80px; }
-      .hero-content { padding-left:0; }
-      .hero-logo img { height:90px; }
-      .nav-container { padding:0 20px; }
-      .schedule-section, .topics-section, .promo-section, .flow-section,
-      .doctor-section, .location-section, .cta-section, .social-section { padding:60px 24px; }
-      .reminders-section { padding:40px 24px; }
-      .promo-card { padding:28px 20px; }
-      .topic-card { padding:28px 24px; }
-      .cta-options { flex-direction:column; align-items:center; }
-    }
-  </style>
+/* ═══════════════════════════════════════════
+   MOBILE  ≤ 540px
+═══════════════════════════════════════════ */
+@media(max-width:540px){
+  .wrap{padding:0 16px;}
+  .sp{padding-top:60px;padding-bottom:60px;}
+  .sp-sm{padding-top:36px;padding-bottom:36px;}
+  /* nav */
+  .nav-cta{font-size:13px;padding:8px 14px;}
+  .nav-link{display:none;}
+  /* hero */
+  .hero{padding-top:80px;padding-bottom:56px;}
+  .hero-grid{grid-template-columns:1fr;gap:32px;}
+  .hero-logo img{height:72px;}
+  .hero-title{font-size:clamp(34px,12vw,52px);letter-spacing:-1px;}
+  .hero-sub{font-size:14px;}
+  .hero-btns{flex-direction:column;}
+  .hero-btns .btn{width:100%;}
+  .hero-right{flex-direction:column;}
+  .hcard{flex:none;}
+  .hero-badges{gap:8px;}
+  .hbadge{font-size:12px;padding:7px 12px;}
+  /* schedule */
+  .sched-grid{border-radius:12px;}
+  .sched-time{font-size:38px;}
+  /* topic */
+  .tcard{padding:26px 20px;}
+  /* promo */
+  .pcard{padding:26px 20px;}
+  .pc-price{font-size:34px;}
+  /* flow */
+  .fnum{width:60px;height:60px;font-size:20px;}
+  .fstep{gap:16px;}
+  /* doctor */
+  .dcard{padding:28px 18px;}
+  /* loc */
+  .mapwrap{height:280px;}
+  /* connect */
+  .connect-h{letter-spacing:-1px;}
+  .connect-btns,.connect-social{flex-direction:column;align-items:center;}
+  .connect-btns .btn,.connect-social .btn{width:100%;max-width:300px;}
+  /* reminders */
+  .rem-grid{grid-template-columns:1fr 1fr;}
+  .rcard{padding:22px 16px;}
+}
+</style>
 </head>
-
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <div class="brand">
-        <a href="#">
-          <img src="assets/images/favicon.png" alt="Evexia Wellness Center" class="brand-logo">
-          <span class="brand-text">Evexia Wellness Center</span>
-        </a>
-      </div>
-      <div class="nav-links">
-        <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank">
-          <i class="fab fa-facebook"></i> Facebook
-        </a>
-      </div>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#" class="nav-brand">
+      <img src="assets/images/favicon.png" alt="Evexia" class="nav-logo">
+      <span class="nav-name">Evexia Wellness Center</span>
+    </a>
+    <div class="nav-right">
+      <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="nav-link">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="nav-cta">
+        <i class="fab fa-facebook-messenger"></i> Message Us
+      </a>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero" id="top">
-    <div class="ribbon ribbon-1"></div>
-    <div class="ribbon ribbon-2"></div>
-    <div class="ribbon ribbon-3"></div>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hcircle hc1"></div>
+  <div class="hcircle hc2"></div>
+  <div class="wrap">
+    <div class="hero-grid">
 
-    <div class="hero-content">
-      <div class="hero-logo">
-        <img src="assets/images/EWC-logo.png" alt="Evexia Wellness Center">
-      </div>
-      <p class="hero-eyebrow">March is Cancer Prevention Month</p>
-      <h1 class="hero-title">Laban sa<br><span class="accent">Cancer Month!</span></h1>
-      <p class="hero-tagline">
-        FREE Health Awareness Lecture. 20% Off Ultrasound Procedures.<br>
-        March 27, 2026 &mdash; Evexia Wellness Center, Sta. Rosa, Laguna.
-      </p>
-      <div class="hero-ctas">
-        <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="btn-primary">
-          <i class="fab fa-facebook-messenger"></i>
-          <span>Message Us to Register</span>
-        </a>
-        <a href="#how-it-works" class="btn-secondary">
-          <i class="fas fa-chevron-down"></i>
-          <span>How It Works</span>
-        </a>
-      </div>
-      <div class="hero-badges">
-        <span class="badge free"><i class="fas fa-check-circle"></i> FREE Lecture &mdash; No Registration Needed</span>
-        <span class="badge promo"><i class="fas fa-tag"></i> 20% Off Ultrasound</span>
-        <span class="badge date"><i class="fas fa-calendar-alt"></i> March 27, 2026 &mdash; Friday</span>
-      </div>
-    </div>
-
-    <div class="scroll-indicator" onclick="document.getElementById('schedule').scrollIntoView({behavior:'smooth'})">
-      <i class="fas fa-chevron-down"></i>
-    </div>
-  </section>
-
-  <!-- SCHEDULE -->
-  <section class="schedule-section" id="schedule">
-    <div class="section-inner">
-      <p class="section-eyebrow">Event Timeline</p>
-      <h2 class="section-title reveal">What's Happening & When</h2>
-      <div class="schedule-grid">
-        <div class="schedule-card card-navy reveal">
-          <div class="schedule-time">Doors Open</div>
-          <div class="schedule-time-big">9<span>AM</span></div>
-          <div class="schedule-label">Call Time</div>
-          <div class="schedule-desc">Arrive early. Get settled. Seats are first come, first served for the lecture.</div>
+      <!-- LEFT: main content -->
+      <div class="hero-left">
+        <div class="hero-logo">
+          <img src="assets/images/EWC-logo.png" alt="Evexia Wellness Center">
         </div>
-        <div class="schedule-card card-teal reveal">
-          <div class="schedule-time">Free Lecture Starts</div>
-          <div class="schedule-time-big">10<span>AM</span></div>
-          <div class="schedule-label">Health Awareness Lecture</div>
-          <div class="schedule-desc">FREE. No registration. No payment. Open to everyone.<br><strong style="color:#a8f0ab;">Attend &amp; get EARLY PASS for Ultrasound.</strong></div>
-        </div>
-        <div class="schedule-card card-rose reveal">
-          <div class="schedule-time">Ultrasound Starts</div>
-          <div class="schedule-time-big">1<span>PM</span></div>
-          <div class="schedule-label">Ultrasound Procedures</div>
-          <div class="schedule-desc">20% Off promo rates. Lecture attendees are FIRST in line. Walk-ins also welcome.</div>
+        <p class="hero-sup">
+          <span class="hero-dot"></span>
+          March is Cancer Prevention Month
+        </p>
+        <h1 class="hero-title">Laban sa<br><span class="accent">Cancer Month!</span></h1>
+        <p class="hero-sub">FREE Health Awareness Lecture &amp; 20% Off Ultrasound Procedures — March 27, 2026 at Evexia Wellness Center, Sta. Rosa, Laguna.</p>
+        <div class="hero-btns">
+          <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="btn btn-lg btn-g">
+            <i class="fab fa-facebook-messenger"></i> Message Us to Register
+          </a>
+          <a href="#how-it-works" class="btn btn-lg btn-ghost">
+            <i class="fas fa-chevron-down"></i> How It Works
+          </a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- TOPICS -->
-  <section class="topics-section">
-    <div class="section-inner">
-      <p class="section-eyebrow" style="text-align:center;color:var(--text-gray);">FREE Lecture Topics</p>
-      <h2 class="section-title reveal" style="color:var(--text-dark);">What You Will Learn</h2>
-      <div class="topics-grid">
-
-        <div class="topic-card primary reveal">
-          <div class="topic-badge">On-the-Day — Priority</div>
-          <div class="topic-icon"><i class="fas fa-ribbon"></i></div>
-          <h3 class="topic-title">Women's Health &amp; Cancer Awareness</h3>
-          <p class="topic-desc">Learn about the most common cancers affecting Filipinos — early detection can save lives. After the lecture, proceed to discounted Ultrasound procedures the same afternoon.</p>
-          <ul class="topic-items">
-            <li><i class="fas fa-circle"></i> Breast Cancer Awareness</li>
-            <li><i class="fas fa-circle"></i> Prostate Cancer Awareness</li>
-            <li><i class="fas fa-circle"></i> Importance of early screening</li>
-            <li><i class="fas fa-circle"></i> What Ultrasound can detect</li>
-          </ul>
-          <div class="topic-note">
-            <i class="fas fa-arrow-right" style="margin-top:2px;"></i>
-            <span>Ultrasound procedures available immediately after the lecture — 1PM onwards.</span>
+      <!-- RIGHT: highlight cards -->
+      <div class="hero-right">
+        <div class="hcard">
+          <div class="hcard-icon hci-g"><i class="fas fa-check-circle"></i></div>
+          <div class="hcard-body">
+            <div class="hcard-label">Free Entry</div>
+            <div class="hcard-title">FREE Lecture</div>
+            <div class="hcard-desc">No registration. No payment. Open to everyone — 10:00 AM.</div>
           </div>
         </div>
-
-        <div class="topic-card secondary reveal">
-          <div class="topic-badge">Awareness — Future Health</div>
-          <div class="topic-icon"><i class="fas fa-shield-virus"></i></div>
-          <h3 class="topic-title">Rabies Awareness &amp; Prevention</h3>
-          <p class="topic-desc">Speaker: Dr. Victor F. Escueta — certified rabies management specialist. Learn about protecting yourself and your family from one of the deadliest but most preventable diseases.</p>
-          <ul class="topic-items">
-            <li><i class="fas fa-circle"></i> Rabies — what you need to know</li>
-            <li><i class="fas fa-circle"></i> Pre-Exposure Prophylaxis</li>
-            <li><i class="fas fa-circle"></i> Post-Exposure Management</li>
-            <li><i class="fas fa-circle"></i> Affordable options at Evexia</li>
-          </ul>
-          <div class="topic-note">
-            <i class="fas fa-info-circle" style="margin-top:2px;"></i>
-            <span>Evexia offers affordable rabies prevention services — pre &amp; post-exposure.</span>
+        <div class="hcard">
+          <div class="hcard-icon hci-y"><i class="fas fa-tag"></i></div>
+          <div class="hcard-body">
+            <div class="hcard-label">Promo</div>
+            <div class="hcard-title">20% Off Ultrasound</div>
+            <div class="hcard-desc">Event-day discount on all UTZ procedures — 1:00 PM onwards.</div>
           </div>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ULTRASOUND PROMO -->
-  <section class="promo-section">
-    <div class="section-inner">
-      <div class="promo-badge-large reveal">
-        <i class="fas fa-tag"></i>
-        March 27 Only &mdash; 20% Off All Ultrasound Procedures
-      </div>
-      <p class="section-eyebrow" style="color:rgba(255,255,255,0.5);">In Partnership with PMP Diagnostic Center</p>
-      <h2 class="section-title reveal">Ultrasound Promo Packages</h2>
-
-      <div class="promo-grid">
-        <!-- Package A -->
-        <div class="promo-card reveal">
-          <div class="promo-card-label">Package A</div>
-          <div class="promo-card-name">Individual Procedures</div>
-          <div class="promo-card-sub">Choose what you need — a la carte</div>
-          <ul class="promo-items">
-            <li><i class="fas fa-check"></i> Whole Abdomen UTZ<br>
-              <span style="margin-left:19px;">
-                <span style="text-decoration:line-through;opacity:0.45;font-size:12px;">PHP 2,350</span>
-                &rarr; <strong style="color:#a8f0ab;">PHP 2,020</strong>
-              </span>
-            </li>
-            <li><i class="fas fa-check"></i> PSA (Prostate)<br>
-              <span style="margin-left:19px;">
-                <span style="text-decoration:line-through;opacity:0.45;font-size:12px;">PHP 1,660</span>
-                &rarr; <strong style="color:#a8f0ab;">PHP 1,468</strong>
-              </span>
-            </li>
-            <li><i class="fas fa-check"></i> Prostate Ultrasound<br>
-              <span style="margin-left:19px;">
-                <span style="text-decoration:line-through;opacity:0.45;font-size:12px;">PHP 950</span>
-                &rarr; <strong style="color:#a8f0ab;">PHP 900</strong>
-              </span>
-            </li>
-            <li><i class="fas fa-check"></i> Breast Bilateral UTZ<br>
-              <span style="margin-left:19px;">
-                <span style="text-decoration:line-through;opacity:0.45;font-size:12px;">PHP 1,600</span>
-                &rarr; <strong style="color:#a8f0ab;">PHP 1,420</strong>
-              </span>
-            </li>
-          </ul>
-          <div class="promo-off-tag">20% Off</div>
-        </div>
-
-        <!-- Package B -->
-        <div class="promo-card reveal" style="border-color:rgba(168,240,171,0.35); background:rgba(255,255,255,0.14);">
-          <div class="promo-card-label">Package B</div>
-          <div class="promo-card-name">Women's Health</div>
-          <div class="promo-card-sub">Whole Abdomen UTZ + Breast Bilateral UTZ</div>
-          <div class="promo-old-price">Regular: PHP 3,750</div>
-          <div class="promo-new-price">
-            <span class="promo-currency">PHP</span> 3,440
+        <div class="hcard">
+          <div class="hcard-icon hci-w"><i class="fas fa-calendar-alt"></i></div>
+          <div class="hcard-body">
+            <div class="hcard-label">Event Date</div>
+            <div class="hcard-title">March 27, 2026 &bull; Friday</div>
+            <div class="hcard-desc">Evexia Wellness Center, Sta. Rosa, Laguna.</div>
           </div>
-          <div class="promo-off-tag">20% Off</div>
-          <ul class="promo-items" style="margin-top:24px;">
-            <li><i class="fas fa-check"></i> Whole Abdomen Ultrasound</li>
-            <li><i class="fas fa-check"></i> Breast Bilateral Ultrasound</li>
-          </ul>
-        </div>
-
-        <!-- Package C -->
-        <div class="promo-card reveal">
-          <div class="promo-card-label">Package C</div>
-          <div class="promo-card-name">Men's Health</div>
-          <div class="promo-card-sub">Whole Abdomen UTZ + PSA + Prostate UTZ</div>
-          <div class="promo-old-price">Regular: PHP 4,560</div>
-          <div class="promo-new-price">
-            <span class="promo-currency">PHP</span> 4,388
-          </div>
-          <div class="promo-off-tag">20% Off</div>
-          <ul class="promo-items" style="margin-top:24px;">
-            <li><i class="fas fa-check"></i> Whole Abdomen Ultrasound</li>
-            <li><i class="fas fa-check"></i> PSA (Prostate Specific Antigen)</li>
-            <li><i class="fas fa-check"></i> Prostate Ultrasound</li>
-          </ul>
         </div>
       </div>
 
-      <div class="promo-cta-row reveal">
-        <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="btn-msg">
-          <i class="fab fa-facebook-messenger"></i>
-          Message Us for Inquiries
-        </a>
-        <p class="promo-note">Walk-ins for Ultrasound welcome. Attend the FREE lecture for PRIORITY ACCESS.</p>
+    </div>
+  </div>
+  <div class="scroll-cue" onclick="document.getElementById('sched').scrollIntoView({behavior:'smooth'})">
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="sched-sec sp" id="sched">
+  <div class="wrap">
+    <span class="eyebrow lt">Event Timeline</span>
+    <h2 class="h2 white center rv">What's Happening &amp; When</h2>
+    <div class="sched-grid rv">
+      <div class="sched-cell">
+        <span class="spill sp-t">Doors Open</span>
+        <div class="sched-time">9<sup>AM</sup></div>
+        <div class="sched-lbl">Call Time</div>
+        <div class="sched-desc">Arrive early. Seats are first-come, first-served for the lecture.</div>
+      </div>
+      <div class="sched-cell">
+        <span class="spill sp-r">Free Lecture</span>
+        <div class="sched-time">10<sup>AM</sup></div>
+        <div class="sched-lbl">Health Awareness Lecture</div>
+        <div class="sched-desc">FREE. No payment. No registration. Open to absolutely everyone.</div>
+        <div class="sched-hl"><i class="fas fa-star" style="margin-right:5px;"></i>Attend &amp; get EARLY PASS for Ultrasound!</div>
+      </div>
+      <div class="sched-cell">
+        <span class="spill sp-y">Ultrasound Promo</span>
+        <div class="sched-time">1<sup>PM</sup></div>
+        <div class="sched-lbl">Ultrasound Procedures</div>
+        <div class="sched-desc">20% Off promo rates. Lecture attendees are first in line. Walk-ins welcome after.</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- HOW IT WORKS -->
-  <section class="flow-section" id="how-it-works">
-    <div class="section-inner">
-      <p class="section-eyebrow" style="text-align:center;color:var(--text-gray);">Simple Process</p>
-      <h2 class="section-title reveal" style="color:var(--text-dark);">How It Works</h2>
-      <div class="flow-grid">
-        <div class="flow-step reveal">
-          <div class="step-number">1</div>
-          <div class="step-title">Attend the FREE Lecture</div>
-          <p class="step-desc">Show up at 10AM. Walang bayad. Walang kailangan i-register. Open to everyone.</p>
-          <span class="step-tag">10:00 AM &mdash; Free Entry</span>
-        </div>
-        <div class="flow-step reveal">
-          <div class="step-number">2</div>
-          <div class="step-title">Get Your Early Pass</div>
-          <p class="step-desc">Lecture attendees automatically get PRIORITY ACCESS — you are first in the Ultrasound queue.</p>
-          <span class="step-tag">Priority Access</span>
-        </div>
-        <div class="flow-step reveal">
-          <div class="step-number">3</div>
-          <div class="step-title">Avail the Ultrasound Promo</div>
-          <p class="step-desc">20% off promo rates starting 1PM. Walk-ins also welcome — served after lecture attendees.</p>
-          <span class="step-tag">1:00 PM &mdash; 20% Off</span>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- TOPICS -->
+<section class="topics-sec sp">
+  <div class="wrap">
+    <span class="eyebrow">Free Lecture Topics</span>
+    <h2 class="h2 center rv">What You Will Learn</h2>
+    <div class="topics-grid">
 
-  <!-- REMINDERS -->
-  <section class="reminders-section">
-    <div class="reminders-inner">
-      <span class="reminders-label">Reminders</span>
-      <span class="reminder-pill"><i class="fas fa-utensils-slash"></i> Do NOT eat 2 hours before your Ultrasound</span>
-      <span class="reminder-pill"><i class="fas fa-coffee"></i> Have brunch early before coming</span>
-      <span class="reminder-pill"><i class="fas fa-tint"></i> Water is allowed</span>
-      <span class="reminder-pill"><i class="fas fa-walking"></i> Walk-ins for UTZ are welcome</span>
-    </div>
-  </section>
-
-  <!-- DOCTOR -->
-  <section class="doctor-section">
-    <div class="section-inner">
-      <p class="section-eyebrow" style="text-align:center;color:var(--text-gray);">Our Speaker</p>
-      <h2 class="section-title reveal" style="color:var(--text-dark);">Meet the Doctor</h2>
-      <div class="doctor-card reveal">
-        <div class="doctor-avatar"><i class="fas fa-user-md"></i></div>
-        <div class="doctor-info">
-          <p class="doctor-eyebrow">Speaking at the FREE Lecture &mdash; March 27, 10AM</p>
-          <h3 class="doctor-name">Dr. Victor F. Escueta</h3>
-          <p class="doctor-title">Resident Physician, Evexia Wellness Center<br>Family Medicine &bull; Integrative Medicine &bull; Naturopathy</p>
-          <span class="doctor-cert">
-            <i class="fas fa-certificate"></i>
-            Certified Rabies Management Specialist &mdash; RMTI
-          </span>
+      <div class="tcard tcard-rose rv">
+        <div class="ticon ticon-r"><i class="fas fa-ribbon"></i></div>
+        <span class="ttype ttype-r">On-the-Day &mdash; Priority Topic</span>
+        <h3 class="ttitle">Women's Health &amp; Cancer Awareness</h3>
+        <p class="tbody">Learn about the most common cancers affecting Filipinos. Early detection saves lives — and on the same afternoon, avail discounted Ultrasound procedures.</p>
+        <ul class="tlist li-r">
+          <li><i class="fas fa-circle"></i> Breast Cancer Awareness &amp; Early Detection</li>
+          <li><i class="fas fa-circle"></i> Prostate Cancer Awareness</li>
+          <li><i class="fas fa-circle"></i> Why regular screening matters</li>
+          <li><i class="fas fa-circle"></i> What Ultrasound can detect</li>
+        </ul>
+        <div class="tnote tnote-r">
+          <i class="fas fa-arrow-right"></i>
+          <span>Ultrasound procedures available immediately after the lecture &mdash; 1PM onwards. Lecture attendees get priority access.</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- LOCATION -->
-  <section class="location-section">
-    <div class="section-inner">
-      <p class="section-eyebrow" style="text-align:center;color:var(--text-gray);">Where to Find Us</p>
-      <h2 class="section-title reveal" style="color:var(--text-dark);">Find Us Here</h2>
-      <div class="location-grid">
+      <div class="tcard tcard-teal rv">
+        <div class="ticon ticon-t"><i class="fas fa-shield-virus"></i></div>
+        <span class="ttype ttype-t">Awareness &mdash; Future Health</span>
+        <h3 class="ttitle">Rabies Awareness &amp; Prevention</h3>
+        <p class="tbody">Speaker: Dr. Victor F. Escueta, certified rabies management specialist. Learn to protect yourself and your family from one of the most preventable diseases.</p>
+        <ul class="tlist li-t">
+          <li><i class="fas fa-circle"></i> What is Rabies — key facts</li>
+          <li><i class="fas fa-circle"></i> Pre-Exposure Prophylaxis (Pre-EP)</li>
+          <li><i class="fas fa-circle"></i> Post-Exposure Management</li>
+          <li><i class="fas fa-circle"></i> Affordable options at Evexia</li>
+        </ul>
+        <div class="tnote tnote-t">
+          <i class="fas fa-info-circle"></i>
+          <span>Evexia Wellness Center offers affordable rabies prevention services &mdash; pre &amp; post-exposure.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo-sec sp" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="promo-top">
+      <div class="promo-ann rv"><i class="fas fa-tag"></i> March 27 Only &mdash; 20% Off All Ultrasound Procedures</div>
+      <span class="eyebrow lt">In Partnership with PMP Diagnostic Center</span>
+      <h2 class="h2 white center rv">Ultrasound Promo Packages</h2>
+    </div>
+
+    <div class="pgrid">
+
+      <!-- Package A -->
+      <div class="pcard rv">
+        <div class="pc-lbl">Package A</div>
+        <div class="pc-name">Individual Procedures</div>
+        <div class="pc-sub">Choose only what you need, a la carte</div>
+        <div class="pc-div"></div>
+        <ul class="pitems">
+          <li>
+            <i class="fas fa-check"></i>
+            <div>Whole Abdomen Ultrasound
+              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 2,350</span> &rarr; <span class="pip-val">PHP 2,020</span></span>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-check"></i>
+            <div>PSA (Prostate Specific Antigen)
+              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 1,660</span> &rarr; <span class="pip-val">PHP 1,468</span></span>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-check"></i>
+            <div>Prostate Ultrasound
+              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 950</span> &rarr; <span class="pip-val">PHP 900</span></span>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-check"></i>
+            <div>Breast Bilateral Ultrasound
+              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 1,600</span> &rarr; <span class="pip-val">PHP 1,420</span></span>
+            </div>
+          </li>
+        </ul>
+        <div style="margin-top:16px;"><span class="pc-off">20% Off</span></div>
+      </div>
+
+      <!-- Package B -->
+      <div class="pcard feat rv">
+        <div class="pc-lbl">Package B</div>
+        <div class="pc-name">Women's Health</div>
+        <div class="pc-sub">Whole Abdomen UTZ + Breast Bilateral UTZ</div>
+        <div class="pc-div"></div>
+        <div class="pc-old">Regular: PHP 3,750</div>
+        <div class="pc-price"><span class="peso">PHP</span> 3,440</div>
+        <div><span class="pc-off">20% Off</span></div>
+        <ul class="pitems" style="margin-top:20px;">
+          <li><i class="fas fa-check"></i> Whole Abdomen Ultrasound</li>
+          <li><i class="fas fa-check"></i> Breast Bilateral Ultrasound</li>
+        </ul>
+      </div>
+
+      <!-- Package C -->
+      <div class="pcard rv">
+        <div class="pc-lbl">Package C</div>
+        <div class="pc-name">Men's Health</div>
+        <div class="pc-sub">Whole Abdomen UTZ + PSA + Prostate UTZ</div>
+        <div class="pc-div"></div>
+        <div class="pc-old">Regular: PHP 4,560</div>
+        <div class="pc-price"><span class="peso">PHP</span> 4,388</div>
+        <div><span class="pc-off">20% Off</span></div>
+        <ul class="pitems" style="margin-top:20px;">
+          <li><i class="fas fa-check"></i> Whole Abdomen Ultrasound</li>
+          <li><i class="fas fa-check"></i> PSA (Prostate Specific Antigen)</li>
+          <li><i class="fas fa-check"></i> Prostate Ultrasound</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="promo-ft rv">
+      <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="btn btn-lg btn-g">
+        <i class="fab fa-facebook-messenger"></i> Message Us for Inquiries
+      </a>
+    </div>
+  </div>
+
+  <!-- GREEN TICKER BAR — full width, outside .wrap -->
+  <div class="ticker-bar">
+    <div class="ticker-inner">
+      <span class="ticker-dot"></span>
+      <p class="ticker-text">Walk-ins for Ultrasound are welcome. &nbsp;&bull;&nbsp; Attend the <strong>FREE Lecture at 10AM</strong> for <strong>PRIORITY ACCESS</strong> to the queue.</p>
+      <span class="ticker-dot"></span>
+    </div>
+  </div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="flow-sec sp" id="how-it-works">
+  <div class="wrap">
+    <span class="eyebrow">Simple Process</span>
+    <h2 class="h2 center rv">How It Works</h2>
+    <div class="fgrid">
+
+      <div class="fstep rv">
+        <div class="fnum fn1">1</div>
         <div>
-          <div class="location-detail reveal">
-            <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div>
-              <h4>Address</h4>
-              <p>San Lorenzo Road, Brgy. Dita, Santa Rosa City, Laguna.<br>Near Chapter 1 Café, past Enchanted Kingdom.</p>
-            </div>
-          </div>
-          <div class="location-detail reveal">
-            <div class="location-icon"><i class="fas fa-directions"></i></div>
-            <div>
-              <h4>How to Get Here</h4>
-              <p>From SLEX, take the Sta. Rosa Exit. Upon reaching Waltermart Sta. Rosa, turn right onto San Lorenzo Road. From Sta. Rosa Proper, take Balibago Road toward Waltermart, then turn left onto San Lorenzo Road.</p>
-            </div>
-          </div>
-          <div class="location-detail reveal">
-            <div class="location-icon"><i class="fas fa-parking"></i></div>
-            <div>
-              <h4>Parking Available</h4>
-              <p>Ample parking on-site. Arrive early on event day for the best spots.</p>
-            </div>
-          </div>
-          <div class="location-detail reveal">
-            <div class="location-icon"><i class="fas fa-calendar-check"></i></div>
-            <div>
-              <h4>Event Date &amp; Time</h4>
-              <p><strong>Friday, March 27, 2026</strong><br>Doors open 9:00 AM &bull; Lecture 10:00 AM &bull; Ultrasound 1:00 PM</p>
-            </div>
-          </div>
-        </div>
-        <div class="map-wrap reveal">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.542309420074!2d121.09854569999999!3d14.279893500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d900283b6225%3A0x645b335515f2f041!2sEvexia%20wellness%20center!5e0!3m2!1sen!2sph!4v1769517585561!5m2!1sen!2sph"
-            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="ftitle">Attend the FREE Lecture</div>
+          <p class="fbody">Show up at 10AM. Walang bayad. Walang kailangan i-register. Open to everyone.</p>
+          <span class="ftag ft-t">10:00 AM &mdash; Free Entry</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- CTA BANNER -->
-  <section class="cta-section">
-    <div class="section-inner">
-      <h2 class="cta-title reveal">Laban na tayo!</h2>
-      <p class="cta-sub reveal">Message us on Facebook to ask questions, get the package details, or let us know you're coming. We'll see you on March 27!</p>
-      <div class="cta-options reveal">
-        <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="btn-msg">
-          <i class="fab fa-facebook-messenger"></i>
-          Message Us Now
-        </a>
-        <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="btn-fb">
-          <i class="fab fa-facebook"></i>
-          Follow on Facebook
-        </a>
+      <div class="fstep rv">
+        <div class="fnum fn2">2</div>
+        <div>
+          <div class="ftitle">Get Your Early Pass</div>
+          <p class="fbody">Lecture attendees automatically receive PRIORITY ACCESS &mdash; you are first in the Ultrasound queue.</p>
+          <span class="ftag ft-r">Priority Access</span>
+        </div>
+      </div>
+
+      <div class="fstep rv">
+        <div class="fnum fn3">3</div>
+        <div>
+          <div class="ftitle">Avail the Promo</div>
+          <p class="fbody">20% off Ultrasound procedures starting 1PM. Walk-ins also accommodated after lecture attendees.</p>
+          <span class="ftag ft-n">1:00 PM &mdash; 20% Off</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- REMINDERS -->
+<section class="rem-sec sp">
+  <div class="wrap">
+    <span class="eyebrow lt">Before You Come</span>
+    <h2 class="rem-heading rv">Important Reminders</h2>
+    <div class="rem-grid">
+      <div class="rcard rv">
+        <div class="rcard-icon"><i class="fas fa-utensils"></i></div>
+        <div class="rcard-title">Do NOT eat 2 hours before your Ultrasound</div>
+        <div class="rcard-desc">Fasting is required for accurate ultrasound results. Skip your meal before the procedure.</div>
+      </div>
+      <div class="rcard rv">
+        <div class="rcard-icon"><i class="fas fa-coffee"></i></div>
+        <div class="rcard-title">Have brunch early before coming</div>
+        <div class="rcard-desc">Eat your meal at home before you arrive so you're comfortable throughout the event.</div>
+      </div>
+      <div class="rcard rv">
+        <div class="rcard-icon"><i class="fas fa-tint"></i></div>
+        <div class="rcard-title">Water is allowed</div>
+        <div class="rcard-desc">You may drink water at any time before and during the event. Stay hydrated.</div>
+      </div>
+      <div class="rcard rv">
+        <div class="rcard-icon"><i class="fas fa-walking"></i></div>
+        <div class="rcard-title">Walk-ins for Ultrasound are welcome</div>
+        <div class="rcard-desc">No appointment needed for UTZ — walk-ins accepted after lecture attendees are served.</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SOCIAL -->
-  <section class="social-section">
-    <div class="section-inner">
-      <p class="section-eyebrow" style="text-align:center;color:var(--text-gray);">Stay Connected</p>
-      <h2 class="section-title" style="color:var(--text-dark);font-size:clamp(24px,3vw,38px);">Follow Evexia Wellness Center</h2>
-      <p class="social-desc">Stay inspired with holistic health tips, healing programs, and meaningful events. Join our growing wellness community in Sta. Rosa, Laguna.</p>
-      <div class="social-links">
-        <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="social-link facebook">
-          <i class="fab fa-facebook"></i> Follow on Facebook
-        </a>
-        <a href="https://www.instagram.com/evexiawellnesscenter/" target="_blank" class="social-link instagram">
-          <i class="fab fa-instagram"></i> Follow on Instagram
-        </a>
+<!-- DOCTOR -->
+<section class="doc-sec sp">
+  <div class="wrap">
+    <span class="eyebrow">Our Speaker</span>
+    <h2 class="h2 center rv">Meet the Doctor</h2>
+    <div class="dcard rv">
+      <div class="davatar"><i class="fas fa-user-md"></i></div>
+      <div class="dbody">
+        <p class="deyebrow">Speaking at the Free Lecture &bull; March 27, 10AM</p>
+        <h3 class="dname">Dr. Victor F. Escueta</h3>
+        <p class="dtitle">Resident Physician, Evexia Wellness Center<br>Family Medicine &bull; Integrative Medicine &bull; Naturopathy</p>
+        <span class="dcert"><i class="fas fa-certificate"></i> Certified Rabies Management Specialist &mdash; RMTI</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-inner">
-      <p>&copy; 2026 Evexia Wellness Center. All Rights Reserved.</p>
-      <p class="footer-credit" style="margin-top:8px;">Website crafted with care by <a href="https://www.instagram.com/ranselberry/" target="_blank">Ransel Sumatra</a></p>
+<!-- LOCATION -->
+<section class="loc-sec sp">
+  <div class="wrap">
+    <span class="eyebrow">Where to Find Us</span>
+    <h2 class="h2 center rv">Find Us Here</h2>
+    <div class="lgrid">
+      <div>
+        <div class="ldet rv">
+          <div class="licon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Address</h4>
+            <p>San Lorenzo Road, Brgy. Dita, Santa Rosa City, Laguna. Near Chapter 1 Café, past Enchanted Kingdom.</p>
+          </div>
+        </div>
+        <div class="ldet rv">
+          <div class="licon"><i class="fas fa-directions"></i></div>
+          <div>
+            <h4>How to Get Here</h4>
+            <p>From SLEX, take the Sta. Rosa Exit. At Waltermart Sta. Rosa, turn right onto San Lorenzo Road. From Sta. Rosa Proper, take Balibago Road toward Waltermart then turn left onto San Lorenzo Road.</p>
+          </div>
+        </div>
+        <div class="ldet rv">
+          <div class="licon"><i class="fas fa-parking"></i></div>
+          <div>
+            <h4>Parking Available</h4>
+            <p>Ample parking on-site for all attendees. Arrive early for the best spots.</p>
+          </div>
+        </div>
+        <div class="ldet rv">
+          <div class="licon"><i class="fas fa-calendar-check"></i></div>
+          <div>
+            <h4>Event Schedule</h4>
+            <p><strong>Friday, March 27, 2026</strong><br>9:00 AM Doors Open &bull; 10:00 AM Lecture &bull; 1:00 PM Ultrasound</p>
+          </div>
+        </div>
+      </div>
+      <div class="mapwrap rv">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.542309420074!2d121.09854569999999!3d14.279893500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d900283b6225%3A0x645b335515f2f041!2sEvexia%20wellness%20center!5e0!3m2!1sen!2sph!4v1769517585561!5m2!1sen!2sph"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script>
-    // Navbar scroll
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 50);
+<!-- CONNECT -->
+<section class="connect-sec sp">
+  <div class="wrap">
+    <h2 class="connect-h rv">Laban na tayo!</h2>
+    <p class="connect-p rv">Message us on Facebook to ask questions, confirm your package, or just let us know you're coming. We'll see you on March 27!</p>
+    <div class="connect-btns rv">
+      <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="btn btn-lg btn-g">
+        <i class="fab fa-facebook-messenger"></i> Message Us Now
+      </a>
+      <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="btn btn-lg btn-fb">
+        <i class="fab fa-facebook"></i> Follow on Facebook
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Evexia Wellness Center. All Rights Reserved.</p>
+  <p style="margin-top:6px;">Website crafted with care by <a href="https://www.instagram.com/ranselberry/" target="_blank">Ransel Sumatra</a></p>
+</footer>
+
+<script>
+  // Navbar
+  const nav = document.getElementById('nav');
+  const tick = () => nav.classList.toggle('scrolled', window.scrollY > 50);
+  window.addEventListener('scroll', tick, {passive:true});
+  tick();
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('in'), (i % 4) * 80);
+        io.unobserve(e.target);
+      }
     });
-
-    // Scroll reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 80);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    reveals.forEach(el => observer.observe(el));
-  </script>
+  }, {threshold: 0.1, rootMargin:'0px 0px -36px 0px'});
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+</script>
 
 </body>
 </html>
