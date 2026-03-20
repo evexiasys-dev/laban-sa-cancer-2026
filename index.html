@@ -34,9 +34,16 @@ body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--td);background:var(-
 img{display:block;max-width:100%;height:auto;}
 a{text-decoration:none;}
 /* ─── LAYOUT ─────────────────────────────────────────────── */
-.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 28px;}
+.wrap{width:100%;max-width:1320px;margin:0 auto;padding:0 48px;}
 .sp{padding-top:88px;padding-bottom:88px;}
 .sp-sm{padding-top:52px;padding-bottom:52px;}
+/* ─── LARGE SCREENS (1440p+) ─────────────────────────────── */
+@media(min-width:1440px){
+  .wrap{max-width:1360px;padding:0 60px;}
+}
+@media(min-width:1920px){
+  .wrap{max-width:1600px;padding:0 80px;}
+}
 /* ─── TYPE HELPERS ───────────────────────────────────────── */
 .eyebrow{display:block;font-size:11px;font-weight:800;letter-spacing:3.5px;text-transform:uppercase;color:var(--tl);margin-bottom:10px;text-align:center;}
 .eyebrow.lt{color:rgba(255,255,255,.5);}
@@ -180,8 +187,9 @@ a{text-decoration:none;}
 .pitems li{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:rgba(255,255,255,.78);padding:7px 0;border-bottom:1px solid rgba(255,255,255,.08);line-height:1.5;}
 .pitems li:last-child{border-bottom:none;}
 .pitems li i{color:#a8f0ab;font-size:11px;margin-top:3px;flex-shrink:0;}
-.pip{display:block;font-size:12px;color:rgba(255,255,255,.45);margin-top:2px;}
-.pip-val{color:#a8f0ab;font-weight:700;}
+.pip{display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-size:12px;color:rgba(255,255,255,.45);margin-top:4px;}
+.pip-val{color:#a8f0ab;font-weight:800;}
+.pip-badge{font-size:11px;background:rgba(255,220,80,.2);border:1px solid rgba(255,220,80,.45);color:#ffe08a;padding:2px 8px;border-radius:20px;font-weight:800;white-space:nowrap;flex-shrink:0;}
 .promo-ft{margin-top:48px;display:flex;flex-direction:column;align-items:center;gap:14px;padding-bottom:52px;}
 /* ─── TICKER BAR ─────────────────────────────────────────── */
 .ticker-bar{background:#3A4A5C;padding:16px 0;width:100%;}
@@ -338,7 +346,8 @@ footer a:hover{color:#fff;}
   .fnum{width:60px;height:60px;font-size:20px;}
   .fstep{gap:16px;}
   /* doctor */
-  .dcard{padding:28px 18px;}
+  .dcard{padding:32px 24px;flex-direction:column;align-items:center;text-align:center;gap:24px;}
+  .dcert{font-size:12px;padding:8px 14px;text-align:center;}
   /* loc */
   .mapwrap{height:280px;}
   /* connect */
@@ -389,7 +398,7 @@ footer a:hover{color:#fff;}
           March is Cancer Prevention Month
         </p>
         <h1 class="hero-title">Laban sa<br><span class="accent">Cancer Month!</span></h1>
-        <p class="hero-sub">FREE Health Awareness Lecture &amp; 20% Off Ultrasound Procedures — March 27, 2026 at Evexia Wellness Center, Sta. Rosa, Laguna.</p>
+        <p class="hero-sub">FREE Health Awareness Lecture &amp; 20% Off Ultrasound Procedures —<br>March 27, 2026 at Evexia Wellness Center, Sta. Rosa, Laguna.</p>
         <div class="hero-btns">
           <a href="https://www.facebook.com/evexiawellnesscenter.ph" target="_blank" class="btn btn-lg btn-g">
             <i class="fab fa-facebook-messenger"></i> Message Us to Register
@@ -513,7 +522,7 @@ footer a:hover{color:#fff;}
 <section class="promo-sec sp" style="padding-bottom:0;">
   <div class="wrap">
     <div class="promo-top">
-      <div class="promo-ann rv"><i class="fas fa-tag"></i> March 27 Only &mdash; 20% Off All Ultrasound Procedures</div>
+      <div class="promo-ann rv"><i class="fas fa-tag"></i> March 27 Only &mdash; Special Promo Prices on All Ultrasound Procedures</div>
       <span class="eyebrow lt">In Partnership with PMP Diagnostic Center</span>
       <h2 class="h2 white center rv">Ultrasound Promo Packages</h2>
     </div>
@@ -524,46 +533,46 @@ footer a:hover{color:#fff;}
       <div class="pcard rv">
         <div class="pc-lbl">Package A</div>
         <div class="pc-name">Individual Procedures</div>
-        <div class="pc-sub">Choose only what you need, a la carte</div>
+        <div class="pc-sub">Choose only what you need, per procedure</div>
         <div class="pc-div"></div>
         <ul class="pitems">
           <li>
             <i class="fas fa-check"></i>
             <div>Whole Abdomen Ultrasound
-              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 2,350</span> &rarr; <span class="pip-val">PHP 2,020</span></span>
+              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 2,350</span> <span class="pip-val">PHP 1,920</span> <span class="pip-badge">18% Off</span></span>
             </div>
           </li>
           <li>
             <i class="fas fa-check"></i>
             <div>PSA (Prostate Specific Antigen)
-              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 1,660</span> &rarr; <span class="pip-val">PHP 1,468</span></span>
+              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 1,660</span> <span class="pip-val">PHP 1,368</span> <span class="pip-badge">18% Off</span></span>
             </div>
           </li>
           <li>
             <i class="fas fa-check"></i>
             <div>Prostate Ultrasound
-              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 950</span> &rarr; <span class="pip-val">PHP 900</span></span>
+              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 950</span> <span class="pip-val">PHP 800</span> <span class="pip-badge">16% Off</span></span>
             </div>
           </li>
           <li>
             <i class="fas fa-check"></i>
             <div>Breast Bilateral Ultrasound
-              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 1,600</span> &rarr; <span class="pip-val">PHP 1,420</span></span>
+              <span class="pip"><span style="text-decoration:line-through;opacity:.5;">PHP 1,600</span> <span class="pip-val">PHP 1,320</span> <span class="pip-badge">18% Off</span></span>
             </div>
           </li>
         </ul>
-        <div style="margin-top:16px;"><span class="pc-off">20% Off</span></div>
+        <div style="margin-top:16px;"><span class="pc-off">Up to 18% Off</span></div>
       </div>
 
       <!-- Package B -->
-      <div class="pcard feat rv">
+      <div class="pcard rv">
         <div class="pc-lbl">Package B</div>
         <div class="pc-name">Women's Health</div>
         <div class="pc-sub">Whole Abdomen UTZ + Breast Bilateral UTZ</div>
         <div class="pc-div"></div>
         <div class="pc-old">Regular: PHP 3,750</div>
-        <div class="pc-price"><span class="peso">PHP</span> 3,440</div>
-        <div><span class="pc-off">20% Off</span></div>
+        <div class="pc-price"><span class="peso">PHP</span> <strong>3,240</strong></div>
+        <div><span class="pc-off">14% Off</span></div>
         <ul class="pitems" style="margin-top:20px;">
           <li><i class="fas fa-check"></i> Whole Abdomen Ultrasound</li>
           <li><i class="fas fa-check"></i> Breast Bilateral Ultrasound</li>
@@ -577,8 +586,8 @@ footer a:hover{color:#fff;}
         <div class="pc-sub">Whole Abdomen UTZ + PSA + Prostate UTZ</div>
         <div class="pc-div"></div>
         <div class="pc-old">Regular: PHP 4,560</div>
-        <div class="pc-price"><span class="peso">PHP</span> 4,388</div>
-        <div><span class="pc-off">20% Off</span></div>
+        <div class="pc-price"><span class="peso">PHP</span> <strong>4,088</strong></div>
+        <div><span class="pc-off">10% Off</span></div>
         <ul class="pitems" style="margin-top:20px;">
           <li><i class="fas fa-check"></i> Whole Abdomen Ultrasound</li>
           <li><i class="fas fa-check"></i> PSA (Prostate Specific Antigen)</li>
