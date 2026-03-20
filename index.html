@@ -108,6 +108,8 @@ a{text-decoration:none;}
 .hero-title{font-size:clamp(42px,7vw,80px);font-weight:800;line-height:1.05;letter-spacing:-2px;margin-bottom:20px;animation:fadeUp .8s ease .2s both;}
 .hero-title .accent{color:#F4A7B9;}
 .hero-sub{font-size:clamp(14px,1.6vw,17px);color:rgba(255,255,255,.72);line-height:1.8;margin-bottom:36px;animation:fadeUp .8s ease .3s both;}
+.hero-sub-mobile{display:none;}
+.hero-sub-desktop{display:inline;}
 .hero-btns{display:flex;flex-wrap:wrap;gap:14px;animation:fadeUp .8s ease .4s both;}
 /* RIGHT — highlight cards */
 .hero-right{display:flex;flex-direction:column;gap:16px;animation:fadeUp .8s ease .5s both;}
@@ -329,6 +331,8 @@ footer a:hover{color:#fff;}
   .hero-logo img{height:100px;}
   .hero-title{font-size:clamp(34px,12vw,52px);letter-spacing:-1px;}
   .hero-sub{font-size:13.5px;line-height:1.65;}
+  .hero-sub-desktop{display:none !important;}
+  .hero-sub-mobile{display:inline !important;}
   .hero-btns{flex-direction:column;}
   .hero-btns .btn{width:100%;}
   .hero-right{flex-direction:column;}
